@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "1b399de6a3c00dd7",
+        "id": "09e0ee25115ac74a",
         "type": "tabs",
         "children": [
           {
-            "id": "7772d131e5952fd4",
+            "id": "723db4842b79be14",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Requirements.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Requirements.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Requirements.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Requirements.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,7 +138,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7772d131e5952fd4",
+  "active": "723db4842b79be14",
   "lastOpenFiles": [
     "Requirements.md",
     "Welcome.md"
