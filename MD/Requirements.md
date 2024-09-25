@@ -26,7 +26,7 @@
 - Generate a registration sticker and transfer fee invoice
 ### Renew registration
 - Check if the vehicle is over two years
-- <2 years, the vehicle performs a fitness check
+- >2 years, the vehicle performs a fitness check
 - Check if the insurance policy exists
 - Check for outstanding fines
 - The renewal is for the same period as the insurance policy
@@ -36,7 +36,18 @@
 
 
 ## Finance section 
-- 
+- Pay unpaid invoices/fines with credit card
+- Request credit car information (Number, cardholder name, validity)
+- Validate if the vehicle details exist
+- List unpaid invoices
+- User selects the desired bills to pay
+- The total amount is calculated
+- User is forwarded to qPay to proceed with payment
+- Check credit card validity with the bank
+- iQVR system records the outcome of qPay
+- Record the approval number
+- Prepare a payment receipt
+- Update the unpaid invoices for the respective vehicle
 
 
 ##  Penalty section
