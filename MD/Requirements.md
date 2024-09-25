@@ -74,33 +74,19 @@
 
 ## Technical section
 
-- To renew a registered vehicle:
-
-	1. The vehicle owner enters the VIN into the system.
-	2. The system retrieves the registration details and checks if the vehicle is over two years old.
-		- If yes:
-			1. The system finds
-			the vehicle fitness certificate issued by an authorized workshop.
-			2. The system retrieves the compulsory insurance policy of the vehicle issued by an
-			insurance company.
-			3. If a new insurance policy is available:
-				- The system checks for any unpaid
-				fines for traffic offences.
-				- Otherwise:
-					Terminate the system with the message “Get insurance policy”. 
-			4. If there is any unpaid fine(s): 
-				- Owner should pay the fine(s) with the message
-				“Pay the bill first’’.
-			5. Else:
-				- The system creates a new registration with
-					the same validation period as specified in the new insurance policy.
-			6. The insurance policy and
-			the fitness certificate are then attached with with the vehicle registration. 
-			7. The system
-			then prepares a new registration sticker with new validity. 
-			8. The system finally creates an invoice for the
-			registration renewal.
-
-		- If no (else):
-			- The system terminates with
-			a message “Get fitness certificate first”.
+- The system now handle 10M cars, in future it will be 30M.
+- The data of the vehicles and the ownership details are
+confidential from general user-level functions.
+- The software could be portable (run on various machines like mobile, etc...)
+- In the future the software can be distributed on different machines in different
+locations.
+- Backup modules will be exists to support the availability of the systems.
+- Software components should be less dependent on each
+other, and more focused in there job.
+- The police department have budget only for 10 new technical staff for this project.
+- And only 20 new servers.
+- The system must run as a plug-in for
+the registration system that uses the Oracle database ("plug-in" is a software extends the functionality of another system without requiring alot of redesigning of the main system.)
+- Most functions were developed using Java and C.
+- The first version should be completed within 3 months.
+- The system is expected to start operating after 12 months.
