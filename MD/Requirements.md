@@ -1,4 +1,6 @@
 ## Registration section
+
+###  Transfer new vehicle
 - Generate an  acknowledgment receipt for the company
 - register new vehicles 
   - requires 
@@ -7,15 +9,29 @@
     3. MODEL
     4. YEAR OF Manufacture
 - request owner name and QID if info matches with manufacture otherwise terminate the session
-- checks with QTS using VIN and QID to check if the car is imported and retreive IP (Insurance policy)
+- checks with QTS using VIN and QID to check if the car is imported and retrieve IP (Insurance policy)
 - records the vehicle to the owner 
 	- QID
 	- name
 	- phone number
 	- address
-- generate a new registration sticker 
-- and create an invoice for the transfer fee 
-
+- generate a new registration sticker and create an invoice for the transfer fee 
+### Transfer used vehicle
+- Current owner enters VIN and QID
+- Validate the details with the system
+- Check for any unpaid bills
+- New owner provides name, QID, mobile phone
+- Assign the new owner as "Current owner" and the current owner to "Previous owner"
+- The insurance policy remains the same
+- Generate a registration sticker and transfer fee invoice
+### Renew registration
+- Check if the vehicle is over two years
+- <2 years, the vehicle performs a fitness check
+- Check if the insurance policy exists
+- Check for outstanding fines
+- The renewal is for the same period as the insurance policy
+- Insurance policy and fitness certificate are attached with the vehicle registration
+- Generate new sticker and invoice for renewal  
 
 
 
