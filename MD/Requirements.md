@@ -51,6 +51,7 @@
 
 
 ##  Penalty section
+
 -  **Retrieve and display penalties associated with vehicles.**
 -  **Verify vehicle and owner credentials (VIN, QID).**
 -  **Summarize outstanding penalties (e.g., fines for traffic violations).**
@@ -60,7 +61,13 @@
 -  **Confirm payment success and update penalty records.**
 -  **Provide payment receipts and update vehicle history.**
 
-
+   ### Assumptions 
+- **Security and Authentication**:  
+     - Assume the system implements strong encryption and authentication mechanisms to ensure secure processing of sensitive data (like credit card details) during payment.
+- **User Notification**:  
+	 - Assume the system sends automatic notifications (via email or SMS) to vehicle owners when a new penalty is added or when penalties are approaching their due dates.
+- **Penalty Categorization**:  
+	 - Assume penalties are categorized (e.g., parking violations, speeding, red-light offenses), and the system is capable of differentiating between penalty types for better user experience.
 
 ## Accident section
 - Accident between two vehicles and one vehicle accepts his/her fault:
