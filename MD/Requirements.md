@@ -52,14 +52,14 @@
 
 ##  Penalty section
 
--  **Retrieve and display penalties associated with vehicles.**
--  **Verify vehicle and owner credentials (VIN, QID).**
--  **Summarize outstanding penalties (e.g., fines for traffic violations).**
--  **Allow selection of penalties for settlement.**
--  **Forward total penalty amount for secure online payment processing.**
--  **Ensure real-time payment validation and authorization.**
--  **Confirm payment success and update penalty records.**
--  **Provide payment receipts and update vehicle history.**
+-  Retrieve and display penalties associated with vehicles.
+-  Verify vehicle and owner credentials (VIN, QID).
+-  Summarize outstanding penalties (e.g., fines for traffic violations).
+-  Allow selection of penalties for settlement.
+-  Forward total penalty amount for secure online payment processing.
+-  Ensure real-time payment validation and authorization.
+-  Confirm payment success and update penalty records.
+-  Provide payment receipts and update vehicle history.
 
    ### Assumptions 
 - **Security and Authentication**:  
