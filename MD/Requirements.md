@@ -1,15 +1,17 @@
 ## Registration section
 
+- New owner Aquire insurance policy
+- Workshop issue multiple fitness certificate
+
 ###  Transfer new vehicle
-- Generate an  acknowledgment receipt for the company
-- register new vehicles 
-  - requires 
-    1. VIN 
-    2. MAKE
-    3. MODEL
-    4. YEAR OF Manufacture
-- request owner name and QID if info matches with manufacture otherwise terminate the session
-- checks with QTS using VIN and QID to check if the car is imported and retrieve IP (Insurance policy)
+- Generate an acknowledgment receipt for the company for the insured car
+- register new vehicles requires 
+	1. VIN 
+	2. MAKE
+	3. MODEL
+	4. YEAR OF Manufacture
+- Request new owner name and QID
+- Verify with QTS using VIN and QID to check if the car is imported and retrieve IP (Insurance policy)
 - records the vehicle to the owner 
 	- QID
 	- name
