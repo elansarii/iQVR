@@ -50,16 +50,16 @@
 
 ## Accident section
 
-| Function | Actor |
-| :------- | :---- |
-|          |       |
-|          |       |
-|          |       |
-|          |       |
-|          |       |
-|          |       |
-|          |       |
-|          |       |
+| Function                               | Actor              |
+| :------------------------------------- | :----------------- |
+| Start Report Accident                  | Owner              |
+| Accident Details                       | Owner              |
+| Confirm Fault                          | Owner              |
+| Create Report                          | -                  |
+| Send Report to insurance               | -                  |
+| acknowledgment receipt                 | -                  |
+| make report available for both parties | Owner<br>Victim    |
+| Retrieve Accident Report               | authorized company |
 
 
 ## Technical section
