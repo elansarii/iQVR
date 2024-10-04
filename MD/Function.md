@@ -33,19 +33,19 @@
 |          |       |
 |          |       |
 
-
 ## Penalty section
 
-| Function | Actor |
-| :------- | :---- |
-|          |       |
-|          |       |
-|          |       |
-|          |       |
-|          |       |
-|          |       |
-|          |       |
-|          |       |
+| Function                                                        | Actor                   |
+| :-------------------------------------------------------------- | :---------------------- |
+| Retrieve Vehicle Penalties                                      | Vehicle Owner           |
+| Verify Owner Credentials                                        | -                       |
+| List and Select Penalties                                       | Vehicle Owner ,Policman |
+| Calculate Total Amount                                          | -                       |
+| Forward Payment for Processing                                  | Payment Gateway (qPay)  |
+| Validate Credit Card                                            | (qPay)                  |
+| Record Payment Outcome and Generate Receipt                     | -                       |
+| Update Vehicle Records                                          | -                       |
+| Categorize penalties and enhance system navigation.(Assumption) | -                       |
 
 
 ## Accident section
