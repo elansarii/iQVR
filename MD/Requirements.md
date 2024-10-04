@@ -116,6 +116,6 @@ the registration system that uses the Oracle database ("plug-in" is a software e
 - A one vehicle can have more than one order, and many confiscating order can be attached for only one vehicle (one-to-many).
 - Role-Based Access Control (RBAC): implement RBAC to control system access and capabilities based on predefined user roles (Vehicle owner, Colonel, Captain, etc...).
 - Role Definition: Define specific permissions for each role, such as querying, selecting, confirming orders, cancelling registrations, and broadcasting orders for traffic police all based on the rank.
-- User Authentication and Authorization: Set up secure login mechanisms to authenticate users and protect their information and  appropriate system access.
-- Enable system administrators (senior engineer or high officer rank) to create, modify, and delete user roles.
+- User Authentication and Authorization: Set up secure login mechanisms to authenticate users and protect their information and appropriate system access based on their role after the authentication process.
+- Enable system administrators (senior engineer or high officer rank assuming) to create, modify, and delete user roles.
 - Design the user interface to dynamically display information and actions based on the user's role and permissions.
