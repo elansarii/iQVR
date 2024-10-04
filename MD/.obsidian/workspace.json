@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Function.md",
+                "file": "Use cases.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Requirements.md",
+                "file": "Function.md",
                 "mode": "source",
                 "source": false
               }
@@ -81,8 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "46cf45397a6cff70",
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Function.md",
+                "file": "Use cases.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Function.md",
+                "file": "Use cases.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Function.md"
+                "file": "Use cases.md"
               }
             }
           }
@@ -161,9 +160,9 @@
   },
   "active": "bc654a7a995d8367",
   "lastOpenFiles": [
-    "Requirements.md",
-    "Use cases.md",
     "Function.md",
+    "Use cases.md",
+    "Requirements.md",
     "Functions.md",
     "Welcome.md"
   ]
