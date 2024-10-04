@@ -121,3 +121,9 @@ the registration system that uses the Oracle database ("plug-in" is a software e
 - For more authentication during the transaction process (such as: paying violations) the system provide the vehicle owner with One-time password (OTP).
 - Enable system administrators (senior engineer or high officer rank assuming) to create, modify, and delete user roles.
 - Design the user interface to dynamically display information and actions based on the user's role and permissions.
+- Notification system:
+	- The violation is detected either by traffic cameras, police officers, renew the insurance policy, or renew fitness certificate.
+	- If violation recorded the vehicle's registration number, violation type, and time/place of the incident is collected.
+	- then vehicle's owner is identified through the vehicle registration database.
+	- The system generates a message detailing the violation, includes fine amount, payment deadlines, legal consequences. Or a message Confirmation regarding renew the insurance policy or the fitness certificate. 
+	- The message is automatically sent to the owner via (SMS, email, app notification).
