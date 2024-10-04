@@ -108,3 +108,14 @@ the registration system that uses the Oracle database ("plug-in" is a software e
 - Most functions were developed using Java and C.
 - The first version should be completed within 3 months.
 - The system is expected to start operating after 12 months.
+- The police can enter the period of time (day, week, month) and select the red light offence, which will list all cars that that match these criteria.
+- The police can select a certin number of vehicle that exceed a specific number of red light offences during this period.
+- Then the system will create a confiscating order for these vechils (high red light offences) and asks for confirmation from the police.
+- If the system got the confirmation (will be saved) and then the system will cancel the registration of those vehicles, and inform the owner about the order of confiscating of his/her car.
+- The system then broadcasts the order to all police departments.
+- A one vehicle can have more than one order, and many confiscating order can be attached for only one vehicle (one-to-many).
+- Role-Based Access Control (RBAC): implement RBAC to control system access and capabilities based on predefined user roles (Vehicle owner, Colonel, Captain, etc...).
+- Role Definition: Define specific permissions for each role, such as querying, selecting, confirming orders, cancelling registrations, and broadcasting orders for traffic police all based on the rank.
+- User Authentication and Authorization: Set up secure login mechanisms to authenticate users and protect their information and  appropriate system access.
+- Enable system administrators (senior engineer or high officer rank) to create, modify, and delete user roles.
+- Design the user interface to dynamically display information and actions based on the user's role and permissions.
