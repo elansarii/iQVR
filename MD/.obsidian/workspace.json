@@ -8,24 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "bc654a7a995d8367",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Use cases.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "106f21e4836a78ba",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Function.md",
+                "file": "Use cases.md",
                 "mode": "source",
                 "source": false
               }
@@ -158,11 +146,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bc654a7a995d8367",
+  "active": "106f21e4836a78ba",
   "lastOpenFiles": [
+    "Requirements.md",
     "Function.md",
     "Use cases.md",
-    "Requirements.md",
     "Functions.md",
     "Welcome.md"
   ]

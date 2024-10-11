@@ -75,7 +75,7 @@ Name: Start Report Accident
 	- 5a. if owner did not confirm no report will be generated
 - Special requirements:
 ### Use-case 2
-- Name: Accident details
+- Name: Record Accident details
 - Description: Owner put the details after applying for accident report
 - Primary actor: Owner
 - Goal: Save the details about the accident
@@ -139,7 +139,7 @@ Name: Start Report Accident
 - Special requirements:
 ### Use-case 6
 
-- Name: acknowledgment receipt
+- Name: Record acknowledgment receipt
 - Description: insurance company send acknowledgment receipt to the system and save it
 - Primary actor: 
 	- insurance company 
