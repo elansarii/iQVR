@@ -53,11 +53,11 @@
 | Function                               | Actor              |
 | :------------------------------------- | :----------------- |
 | Start Report Accident                  | Owner              |
-| Accident Details                       | Owner              |
+| Record Accident Details                | Owner              |
 | Confirm Fault                          | Owner              |
 | Create Report                          | -                  |
 | Send Report to insurance               | -                  |
-| acknowledgment receipt                 | -                  |
+| Record acknowledgment receipt          | -                  |
 | make report available for both parties | Owner<br>Victim    |
 | Retrieve Accident Report               | authorized company |
 

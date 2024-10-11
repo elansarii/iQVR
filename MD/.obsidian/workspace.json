@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Use cases.md",
+                "file": "Function.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Use cases.md",
+                "file": "Function.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Use cases.md",
+                "file": "Function.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Use cases.md"
+                "file": "Function.md"
               }
             }
           }
@@ -149,8 +149,8 @@
   "active": "106f21e4836a78ba",
   "lastOpenFiles": [
     "Requirements.md",
-    "Function.md",
     "Use cases.md",
+    "Function.md",
     "Functions.md",
     "Welcome.md"
   ]
