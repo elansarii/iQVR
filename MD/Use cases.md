@@ -67,59 +67,18 @@ Name: Start Report Accident
   1. the owner log in to the system and selects to report the accident
   2. the owner enter the VIN of both parties 
   3. System checks the provided VINs
-  4. owner enters the accident details 
-  5. owner confirm his fault
-  6. system generate the report
+  4. System call provide accident details method 
+  5. system save the details
+  6. system call confirm fault method
+  7. owner confirm his fault
+  8. system call generate report to create the report for the accident
 - Extensions:
 	- 3a. if system did not retrieve VIN , owner should enter VIN again
-	- 5a. if owner did not confirm no report will be generated
+	- 8a. if owner did not confirm no report will be generated
 - Special requirements:
-### Use-case 2
-- Name: Record Accident details
-- Description: Owner put the details after applying for accident report
-- Primary actor: Owner
-- Goal: Save the details about the accident
-- Triggers: Owner started the report
-- Preconditions: owner start the report 
-- Postconditions: save the details of the accident
-- Main scenario:
-  1. After creating a report owner put the details of the accident
-  2. system saves the details of the accident
-- Extensions:
-- Special requirements:
-### Use-case 3
-- Name: Confirm fault
-- Description: Owner confirm by this option that it is his fault car
-- Primary actor: owner
-- Goal: Send confirmation to create the report
-- Triggers: Owner start the report and enter the details
-- Preconditions:
-	- applied for the report
-	- entered the accident details
-- Postconditions: send confirmation to create the report
-- Main scenario:
-  1. owner confirm that it is his fault
-  2. system save the answer 
-- Extensions: 1a. if owner did no confirm no report will be created
-- Special requirements:
-### Use-case 4
 
-- Name: Create Report
-- Description: System create the report after saving all the details and the confirmation from owner
-- Primary actor: System (iQVR)
-- Goal: create a unique report containing all information 
-- Triggers: owner put all the details and confirm his fault
-- Preconditions: 
-	- owner entered details
-	- owner confirm his fault
-- Postconditions:
-	- successfully create report containing all accident information
-- Main scenario:
-  1. System saves the details entered by the owner
-  2. create report with all relevant information
-- Extensions:
-- Special requirements:
-### Use-case 5
+
+### Use-case 2
 
 - Name: Send report to insurance company
 - Description: System sends the report after creating it to the insurance company
@@ -135,47 +94,12 @@ Name: Start Report Accident
 - Main scenario:
   1. System retrieve report 
   2. System send report to insurance company
+  3. insurance company sends an acknowledgment
+  4. system call Record acknowledgment receipt method to save insurance receipt 
+  5. system make the report available for both parties after receiving acknowledgment 
 - Extensions:
 - Special requirements:
-### Use-case 6
-
-- Name: Record acknowledgment receipt
-- Description: insurance company send acknowledgment receipt to the system and save it
-- Primary actor: 
-	- insurance company 
-	- System (iQVR)
-- Goal: System successfully save the acknowledgment receipt received from the insurance company
-- Triggers: System send accident report to insurance company
-- Preconditions: 
-	- system creates report
-	- system send report to insurance company
-- Postconditions:
-	- save acknowledgment receipt in system
-- Main scenario:
-  1. system send report accident to insurance company
-  2. insurance company send acknowledgment receipt to system
-- Extensions:
-- Special requirements:
-### Use-case 7
-- Name: make report available for both parties
-- Description: System make the report available for both parties after getting acknowledgment  
-- Primary actor:
-	- Owner 
-	- victim
-- Goal: make the report available for both parties
-- Triggers: insurance company acknowledge report sent by system
-- Preconditions:
-	- System creates the report
-	- insurance company acknowledge report 
-	- System gets acknowledgment receipt
-- Postconditions:
-	- report will be available for both parties to retrieve 
-- Main scenario:
-  1. system gets acknowledgment receipt 
-  2. system make the report available 
-- Extensions:
-- Special requirements:
-### Use-case 8
+### Use-case 3
 
 - Name: Retrieve Accident Report
 - Description: Accident report is available for authorized companies to retrieve 
