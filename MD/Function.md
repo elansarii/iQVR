@@ -66,13 +66,13 @@
 
 | Function | Actor |
 | :------- | :---- |
-| Get violated cars        | Policeman      |
-| Create confiscating order         |   -   |
-| Cancel registration          |       -|
+| Get violated red-light cars        | Policeman      |
+| Create confiscating order         |   System <br>Policeman   |
+| Cancel registration          | System |
 | Inform owner about confiscating|- <Br> Owner      |
 | Send broadcasts to all departments         |-      |
 | Send Notification to owner         |  Owner     |
-|          |       |
+| Save confiscating confirmation         | System      |
 |          |       |
 |          |       |
 |          |       |
