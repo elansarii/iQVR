@@ -66,8 +66,12 @@
 
 | Function | Actor |
 | :------- | :---- |
-|          |       |
-|          |       |
+| Get violated cars        | Policeman      |
+| Create confiscating order         |   -   |
+| Cancel registration          |       -|
+| Inform owner about confiscating|- <Br> Owner      |
+| Send broadcasts to all departments         |-      |
+| Send Notification to owner         |  Owner     |
 |          |       |
 |          |       |
 |          |       |
