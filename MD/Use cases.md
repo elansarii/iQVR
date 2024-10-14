@@ -1,6 +1,55 @@
 ## Registration section
 ### Use-case 1
 
+- Name: Register new vehicle
+- Description: The new owner is registering a vehicle that has not been registered before
+- Primary actor: Owner
+- Goal: Register the car in iQVR system
+- Triggers: The owner took delivery of a new vehicle
+- Preconditions: 
+	- Insurance policy
+	- The manufacturer confirms the legitimacy the car
+	- Confirm if the car is from overseas with QTS
+	- 
+- Postconditions:
+	- Register the car in iQVR system
+	- Generate registration sticker
+	- Generate invoice for the registration fee
+	- Update the due bills in the owners page
+- Main scenario:
+  1. Owner purchases insurance policy
+  2. Owner enters VIN, make, model, year of manufacturing 
+  3. Data is validated with the manufacturer 
+  4. Car is checked if its from overseas 
+  6. Displays the generated registration number
+  7. Owner enters their name and QID
+  8. Owner receives the registration sticker and transfer invoice 
+- Extensions:
+	- Manufacturer Does Not Confirm Vehicle
+	- QTS Does Not Confirm Ownership
+	- Insurance Policy Not Found
+- Special requirements:
+	- The iQVR system must be integrated with the manufacturer's system and the QTS system for real-time validation of vehicle information.
+	- Clear error messages and guidance should be provided to the user if any validations fail.
+
+
+### Use-case 2
+
+- Name:
+- Description:
+- Primary actor:
+- Goal:
+- Triggers:
+- Preconditions:
+- Postconditions:
+- Main scenario:
+  1.
+  2.
+- Extensions:
+- Special requirements:
+
+### Use-case 3
+
 - Name:
 - Description:
 - Primary actor:
