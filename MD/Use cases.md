@@ -35,7 +35,7 @@
 
 ### Use-case 2
 
-- Name:
+- Name: Transfer ownership from one to another
 - Description:
 - Primary actor:
 - Goal:
@@ -50,7 +50,7 @@
 
 ### Use-case 3
 
-- Name:
+- Name: Renew Registration
 - Description:
 - Primary actor:
 - Goal:
