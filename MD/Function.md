@@ -67,9 +67,9 @@
 | Function | Actor |
 | :------- | :---- |
 | Get violated red-light cars        | Policeman      |
-| Create confiscating order         |   System <br>Policeman   |
-| Cancel registration          | System |
-| Inform owner about confiscating|System <Br> Owner      |
-| Send broadcasts to all departments         |System      |
+| Create confiscating order         |  Policeman   |
+| Cancel registration          | - |
+| Inform owner about confiscating| Owner      |
+| Send broadcasts to all departments         |-   |
 | Send Notification to owner         |  Owner     |
-| Save confiscating confirmation         | System      |
+| Save confiscating confirmation         | -  |
