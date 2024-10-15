@@ -118,7 +118,7 @@ light offence type from the system.
 - Role-Based Access Control (RBAC): implement RBAC to control system access and capabilities based on predefined user roles (Vehicle owner, Colonel, Captain, etc...).
 - Role Definition: Define specific permissions for each role, such as querying, selecting, confirming orders, cancelling registrations, and broadcasting orders for traffic police all based on the rank.
 - User Authentication and Authorization: the system should implement a secure login mechanisms to authenticate users and protect their information and authorization mechanism to make the user access the system based on their role.
-- The system offer the user a various way of authentication, such as: Face ID, Fingerprint, or Multi-factor authentication (mfa).
+- The system offer the user a various way of authentication, such as: Face ID, Fingerprint, password, or Multi-factor authentication (mfa).
 - For more authentication during the transaction process (such as: paying violations) the system provide the vehicle owner with One-time password (OTP).
 - Enable system administrators (senior engineer or high officer rank assuming) to create, modify, and delete user roles.
 - Design the user interface to dynamically display information and actions based on the user's role and permissions.
@@ -128,3 +128,4 @@ light offence type from the system.
 	- then vehicle's owner is identified through the vehicle registration database.
 	- The system generates a message detailing the violation, includes fine amount, payment deadlines, legal consequences. Or a message Confirmation regarding renew the insurance policy or the fitness certificate. 
 	- The message is automatically sent to the owner via (SMS, email, app notification).
+- The system should be able to handle vehicle fitness certificate which is issued by an authorized workshop.
