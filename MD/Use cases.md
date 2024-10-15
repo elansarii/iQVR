@@ -10,7 +10,6 @@
 	- Insurance policy
 	- The manufacturer confirms the legitimacy the car
 	- Confirm if the car is from overseas with QTS
-	- 
 - Postconditions:
 	- Register the car in iQVR system
 	- Generate registration sticker
@@ -187,12 +186,13 @@ Name: Start Report Accident
 	- System insure the company has the access to retrieve the report 
 ## Technical section
 ### Use-case 1
-- Name:
-- Description:
-- Primary actor:
-- Goal:
-- Triggers:
-- Preconditions:
+- Name: Get violated red-light cars
+- Description: The policeman can select the time period and the red-light violation and it will list all vehicles that match these conditions.
+- Primary actor: Policeman
+- Goal: To get all vehicles that violated the red-light traffic.
+- Triggers: The policeman wants to list all vehicles that violated the red-light traffic for specific time.
+- Preconditions: 
+	- There is at least a vehicle that violated the red-light traffic
 - Postconditions:
 - Main scenario:
   1.
