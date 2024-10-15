@@ -36,33 +36,49 @@
 ### Use-case 2
 
 - Name: Transfer ownership from one to another
-- Description:
-- Primary actor:
-- Goal:
-- Triggers:
-- Preconditions:
+- Description: Transferring the ownership of the car from one owner to another
+- Primary actor: Previous owner, new owner
+- Goal: Transferring the registration info to the new owner
+- Triggers: The pervious owner is selling his/her car
+- Preconditions: 
+	- The car is registered previously in iQVR
 - Postconditions:
+	- The current owner is set as "Previous owner"
+	- The new owner is set as "Current owner"
 - Main scenario:
-  1.
-  2.
+  1. Current owner enters VIN and his QID
+  2. The system retrieves registration info of the car
+  4. New owner QID and name is provided to the system
+  5. Insurance is transferred  
 - Extensions:
+	- There are unpaid bills/fines by the current owner
+	- The information of the car doesn't match with the owners info
 - Special requirements:
+	- none
 
 ### Use-case 3
 
 - Name: Renew Registration
-- Description:
-- Primary actor:
-- Goal:
-- Triggers:
+- Description: The owner renews his/her expired registration
+- Primary actor: Owner
+- Goal: Renewing the registration
+- Triggers: The registration is expired
 - Preconditions:
-- Postconditions:
+	- The car is registered in iQVR previously
+	- The car has a fitness check if its >2 years old
+	- All bills/fees are paid
+- Postconditions: Registration is renewed for the duration of the insurance policy
 - Main scenario:
-  1.
-  2.
+  1. Owner Enters VIN
+  2. Retrieve registration  details 
+  3. Insurance policy and fitness certificate are attached
+  4. Receive a new registration sticker
+  5. Receive an invoice for the renewal
 - Extensions:
+	- The car doesn't have fitness certificate and is more than 2 years old
+	- There are unpaid bills and the owner is forwarded to the payment portal to pay their bills
 - Special requirements:
-
+	- Integration with the mechanic shop to validate fitness certificates 
 
 ## Finance section
 ### Use-case 1
