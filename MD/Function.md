@@ -73,3 +73,4 @@
 | Send broadcasts to all departments         |-   |
 | Send Notification to owner         |  Owner     |
 | Save confiscating confirmation         | -  |
+| Store vehicle fitness certificate  | Authorized workshop |
