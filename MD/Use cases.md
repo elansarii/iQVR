@@ -20,9 +20,9 @@
   2. Owner enters VIN, make, model, year of manufacturing 
   3. Data is validated with the manufacturer 
   4. Car is checked if its from overseas 
-  6. Displays the generated registration number
-  7. Owner enters their name and QID
-  8. Owner receives the registration sticker and transfer invoice 
+  5. Displays the generated registration number
+  6. Owner enters their name and QID
+  7. Owner receives the registration sticker and transfer invoice 
 - Extensions:
 	- Manufacturer Does Not Confirm Vehicle
 	- QTS Does Not Confirm Ownership
@@ -187,15 +187,20 @@ Name: Start Report Accident
 ## Technical section
 ### Use-case 1
 - Name: Get violated red-light cars
-- Description: The policeman can select the time period and the red-light violation and it will list all vehicles that match these conditions.
+- Description: The policeman can select the time period and the red-light violation and it will list the vehicles that match these conditions.
 - Primary actor: Policeman
 - Goal: To get all vehicles that violated the red-light traffic.
 - Triggers: The policeman wants to list all vehicles that violated the red-light traffic for specific time.
 - Preconditions: 
 	- There is at least a vehicle that violated the red-light traffic
 - Postconditions:
+	- Create a confiscating order for the violated vechils
 - Main scenario:
-  1.
-  2.
+  1. The policeman will enter a period time and choose the red-light violation.
+  2. If the system got the the confirmation from the policeman/officer --> they system will cancel the registration of those vehicles.
+  3. The violated car's owner will be informed about the order.
+  4. The system broadcasts the confiscating order for all police departments.
 - Extensions:
+	- The violated cars will have a high red-light offences.
 - Special requirements:
+	- The confirmation of order for confiscating the car will be saved.
