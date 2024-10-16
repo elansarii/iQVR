@@ -223,4 +223,4 @@ Name: Start Report Accident
 - Extensions:
 	- The system should verifies that the notification was successfully delivered to the owner.
 - Special requirements:
-	- The registered vechile information should be connected with the owner's contact information (e.g. phone number).
+	- The registered vechile information should be connected/related with the owner's contact information (e.g. phone number).
