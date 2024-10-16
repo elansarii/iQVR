@@ -204,3 +204,21 @@ Name: Start Report Accident
 	- The violated cars will have a high red-light offences.
 - Special requirements:
 	- The confirmation of order for confiscating the car will be saved.
+
+### Use-case 2
+
+- Name: Send Notification to owner
+- Description: This use case is responsible for sending a notification for the vehicle owner.
+- Primary actor: Owner
+- Goal: The owner gets a notification about his/her vehicle (violation or no violation).
+- Triggers: An update to the vechile. 
+- Preconditions:
+	- The vechile is registered in IQVR system.
+- Postconditions:
+	- The vechile owner receives a notification.
+- Main scenario:
+  1. 
+  2.
+- Extensions:
+- Special requirements:
+	- The registered vechile should be connected with the owner's contact information.
