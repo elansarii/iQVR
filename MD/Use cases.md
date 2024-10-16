@@ -1,104 +1,135 @@
 ## Registration section
 ### Use-case 1
-
-- Name: Register new vehicle
-- Description: The new owner is registering a vehicle that has not been registered before
-- Primary actor: Owner
-- Goal: Register the car in iQVR system
-- Triggers: The owner took delivery of a new vehicle
-- Preconditions: 
-	- Insurance policy
-	- The manufacturer confirms the legitimacy the car
-	- Confirm if the car is from overseas with QTS
-- Postconditions:
-	- Register the car in iQVR system
-	- Generate registration sticker
-	- Generate invoice for the registration fee
-	- Update the due bills in the owners page
-- Main scenario:
-  1. Owner purchases insurance policy
-  2. Owner enters VIN, make, model, year of manufacturing 
-  3. Data is validated with the manufacturer 
-  4. Car is checked if its from overseas 
-  5. Displays the generated registration number
-  6. Owner enters their name and QID
-  7. Owner receives the registration sticker and transfer invoice 
-- Extensions:
-	- Manufacturer Does Not Confirm Vehicle
-	- QTS Does Not Confirm Ownership
-	- Insurance Policy Not Found
-- Special requirements:
-	- The iQVR system must be integrated with the manufacturer's system and the QTS system for real-time validation of vehicle information.
-	- Clear error messages and guidance should be provided to the user if any validations fail.
+- **Name**: Register New Vehicle
+- **Description**: The owner registers a new, unregistered vehicle in the iQVR system, ensuring it is properly documented and insured before use.
+- **Primary actor**: Vehicle Owner
+- **Goal**: Successfully register the new vehicle in the iQVR system.
+- **Triggers**: The owner has taken delivery of a new vehicle and needs to register it.
+- **Preconditions**:
+    - The vehicle owner must have a valid insurance policy for the vehicle.
+    - The manufacturer must verify and confirm the legitimacy of the vehicle.
+    - Qatar Trade Service (QTS) must confirm whether the vehicle was imported from overseas.
+- **Postconditions**:
+    - The vehicle is registered in the iQVR system.
+    - A new registration sticker is generated.
+    - An invoice for the registration fee is generated.
+    - The new registration appears in the owner's list of registered vehicles, and unpaid bills are updated on the owner's page.
+- **Main scenario**:
+    1. The owner purchases an insurance policy from a registered insurance company, which is automatically recorded in iQVR.
+    2. The owner enters the vehicle's VIN, make, model, and year of manufacture into the iQVR system.
+    3. iQVR sends the vehicle information to the manufacturer's system to validate the VIN and confirm the vehicle’s legitimacy.
+    4. iQVR communicates with Qatar Trade Service to confirm whether the vehicle was imported from overseas.
+    5. If both checks are successful, the system generates a unique registration number for the vehicle.
+    6. The owner enters their personal information (name and QID).
+    7. The system generates a registration sticker for the vehicle and creates an invoice for the registration fee.
+    8. The registration details, including the sticker and due invoice, are available for the owner to view and pay.
+- **Extensions**:
+    - 3a. **Manufacturer Does Not Confirm Vehicle**: The system terminates with the message “Incorrect vehicle information,” and no registration occurs.
+    - 4a. **QTS Does Not Confirm Ownership**: The system terminates with the message “Incorrect ownership,” and no registration occurs.
+    - 2a. **Insurance Policy Not Found**: The system prompts the user to purchase a valid insurance policy before proceeding.
+- **Special requirements**:
+    - The iQVR system must be seamlessly integrated with the manufacturer’s system and QTS for real-time validation.
+    - Clear, user-friendly error messages should be displayed if any external validation fails, guiding the user on how to resolve the issue.
 
 
 ### Use-case 2
 
-- Name: Transfer ownership from one to another
-- Description: Transferring the ownership of the car from one owner to another
-- Primary actor: Previous owner, new owner
-- Goal: Transferring the registration info to the new owner
-- Triggers: The pervious owner is selling his/her car
-- Preconditions: 
-	- The car is registered previously in iQVR
-- Postconditions:
-	- The current owner is set as "Previous owner"
-	- The new owner is set as "Current owner"
-- Main scenario:
-  1. Current owner enters VIN and his QID
-  2. The system retrieves registration info of the car
-  4. New owner QID and name is provided to the system
-  5. Insurance is transferred  
-- Extensions:
-	- There are unpaid bills/fines by the current owner
-	- The information of the car doesn't match with the owners info
-- Special requirements:
-	- none
+- **Name**: Transfer Ownership of Vehicle
+- **Description**: This use case describes the process of transferring vehicle ownership from one person to another in the iQVR system.
+- **Primary actor**: Current Owner (Previous Owner) and New Owner
+- **Goal**: To transfer the vehicle registration and ownership to a new owner.
+- **Triggers**: The current owner decides to sell the vehicle to a new owner.
+- **Preconditions**:
+    - The vehicle must be registered in the iQVR system.
+    - The current owner must be the registered owner of the vehicle.
+- **Postconditions**:
+    - The current owner is set as the “previous owner” in the system.
+    - The new owner is registered as the “current owner” in the system.
+    - The insurance remains attached to the vehicle, but the new owner can update it later.
+- **Main scenario**:
+    1. The current owner enters the vehicle's VIN and their QID into the iQVR system.
+    2. The system retrieves the registration details for the vehicle.
+    3. The current owner confirms the vehicle details are correct.
+    4. The new owner's name and QID are entered into the system.
+    5. The system assigns the vehicle to the new owner, updates the registration, and records the current owner as the "previous owner."
+    6. The insurance policy remains unchanged, but the system provides the option to update the insurance details later.
+    7. The system generates a new registration sticker for the new owner and creates an invoice for the transfer fee.
+- **Extensions**:
+    - 3a. **Unpaid Bills or Fines**: If the current owner has unpaid invoices or fines, the system terminates with the message “Pay the bills first,” directing the owner to the payment portal.
+    - 2a. **Incorrect Information**: If the system detects discrepancies between the registration details and the provided information, it terminates with the message “Incorrect information.”
+- **Special requirements**:
+    - The system should display a confirmation summary before finalizing the transfer, giving the current owner a last chance to review details.
 
 ### Use-case 3
 
-- Name: Renew Registration
-- Description: The owner renews his/her expired registration
-- Primary actor: Owner
-- Goal: Renewing the registration
-- Triggers: The registration is expired
-- Preconditions:
-	- The car is registered in iQVR previously
-	- The car has a fitness check if its >2 years old
-	- All bills/fees are paid
-- Postconditions: Registration is renewed for the duration of the insurance policy
-- Main scenario:
-  1. Owner Enters VIN
-  2. Retrieve registration  details 
-  3. Insurance policy and fitness certificate are attached
-  4. Receive a new registration sticker
-  5. Receive an invoice for the renewal
-- Extensions:
-	- The car doesn't have fitness certificate and is more than 2 years old
-	- There are unpaid bills and the owner is forwarded to the payment portal to pay their bills
-- Special requirements:
-	- Integration with the mechanic shop to validate fitness certificates 
+- **Name**: Renew Vehicle Registration
+- **Description**: The vehicle owner renews the registration of an expired or about-to-expire vehicle.
+- **Primary actor**: Vehicle Owner
+- **Goal**: To renew the registration of a registered vehicle in compliance with legal requirements.
+- **Triggers**: The vehicle's registration is expired or approaching expiration.
+- **Preconditions**:
+    - The vehicle must already be registered in the iQVR system.
+    - If the vehicle is over two years old, it must have a valid fitness certificate.
+    - All unpaid bills and fines must be cleared.
+    - The vehicle must have a valid insurance policy.
+- **Postconditions**:
+    - The vehicle registration is renewed for the duration of the insurance policy.
+    - A new registration sticker is generated.
+    - An invoice for the renewal fee is created and added to the owner’s unpaid bills.
+- **Main scenario**:
+    1. The owner enters the vehicle’s VIN into the iQVR system.
+    2. The system retrieves the current registration details of the vehicle.
+    3. If the vehicle is over two years old, the system checks for a valid fitness certificate from an authorized workshop.
+    4. The system retrieves the vehicle's insurance policy from the insurance company.
+    5. The system checks for any unpaid fines or bills.
+    6. If all conditions are met, the system generates a new registration sticker and updates the registration for the duration of the insurance policy.
+    7. The system generates an invoice for the registration renewal fee.
+    8. The owner can view and download the new registration sticker and pay the renewal invoice.
+- **Extensions**:
+    - 3a. **No Fitness Certificate**: If the vehicle is over two years old and there is no fitness certificate, the system terminates with the message “Get fitness certificate first.”
+    - 5a. **Unpaid Bills**: If the vehicle owner has unpaid bills or fines, the system directs the user to the payment portal with the message “Pay the bills first.”
+- **Special requirements**:
+    - The iQVR system must be integrated with the authorized workshops to verify the validity of fitness certificates.
+    - The user interface should clearly notify the owner of any pending steps (such as obtaining a fitness certificate) required before renewal can be completed.
 
 ## Finance section
 ### Use-case 1
-- Name:
-- Description:
-- Primary actor:
-- Goal:
-- Triggers:
-- Preconditions:
-- Postconditions:
-- Main scenario:
-  1.
-  2.
-- Extensions:
-- Special requirements:
-
-
+- **Name**: Pay Unpaid Invoices or Fines
+- **Description**: Pay any unpaid invoices or fines for their vehicle using a credit card through the iQVR system.
+- **Primary actor**: Vehicle Owner
+- **Goal**: To allow the vehicle owner to settle unpaid invoices or fines associated with their vehicle.
+- **Triggers**: The vehicle owner wants to pay an outstanding invoice or fine.
+- **Preconditions**:
+    - The vehicle owner must have a valid credit card.
+    - The vehicle owner must be logged into the iQVR system.
+    - The vehicle must have unpaid invoices or fines associated with it.
+- **Postconditions**:
+    - The unpaid invoices or fines are marked as paid.
+    - A payment receipt is generated and displayed to the vehicle owner.
+    - The invoice/fine details are updated in the system.
+- **Main scenario**:
+    1. The vehicle owner enters the VIN of the vehicle into the iQVR system.
+    2. The system retrieves the vehicle registration details and verifies if there are any unpaid invoices or fines associated with the vehicle.
+    3. If there are no unpaid invoices, the system terminates with the message “No unpaid invoices or fines.”
+    4. If there are unpaid invoices or fines, the system lists them for the owner to review.
+    5. The vehicle owner selects which invoices or fines they wish to pay.
+    6. The system computes the total amount due and prompts the vehicle owner to enter credit card details.
+    7. The vehicle owner enters the credit card details (number, name on the card, and expiration date).
+    8. The system forwards the payment request to the qPay system for approval.
+    9. qPay verifies the credit card’s validity by contacting the credit card provider (bank).
+    10. If the card is valid, qPay returns an approval, and the system processes the payment.
+    11. If the card is invalid, the system terminates with the message “Invalid credit card details. Please try again.”
+    12. The system generates a payment receipt and marks the selected invoices or fines as paid.
+    13. The vehicle owner can view and print the receipt.
+- **Extensions**:
+    - 8a. If qPay is unavailable or unresponsive, the system shows the message “Payment system unavailable. Please try again later.”
+    - 9a. If the credit card is declined, the system prompts the vehicle owner to re-enter valid credit card details.
+- **Special requirements**:
+    - The system must ensure secure transmission of credit card details using encryption.
+    - The system must handle timeout scenarios when communicating with qPay and display appropriate messages to the user.
 
 ## Penalty section
 ### Use-case 1
-
 - Name:
 - Description:
 - Primary actor:
