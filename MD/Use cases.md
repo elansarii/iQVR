@@ -207,7 +207,7 @@ Name: Start Report Accident
 
 ### Use-case 2
 
-- Name: Send Notification to owner
+- Name: Send notification to owner
 - Description: This use case is responsible for sending a notification for the vehicle owner.
 - Primary actor: Owner
 - Goal: The owner gets a notification about his/her vehicle (violation or no violation).
@@ -217,8 +217,10 @@ Name: Start Report Accident
 - Postconditions:
 	- The vechile owner receives a notification.
 - Main scenario:
-  1. 
-  2.
+  1. An update happens to the owner's vechile account (whether it is a violation or not).
+  2. An SMS/email message will be generated describing the latest update.
+  3. Send the message to the owner contact information.
 - Extensions:
+	- The system should verifies that the notification was successfully delivered to the owner.
 - Special requirements:
-	- The registered vechile should be connected with the owner's contact information.
+	- The registered vechile information should be connected with the owner's contact information (e.g. phone number).
