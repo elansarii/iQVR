@@ -128,20 +128,112 @@
     - The system must ensure secure transmission of credit card details using encryption.
     - The system must handle timeout scenarios when communicating with qPay and display appropriate messages to the user.
 
-## Penalty section
+## Penalty Section
+
 ### Use-case 1
-- Name:
-- Description:
-- Primary actor:
-- Goal:
-- Triggers:
-- Preconditions:
-- Postconditions:
-- Main scenario:
-  1.
-  2.
-- Extensions:
-- Special requirements:
+- **Name**: **Retrieve and Display Vehicle Penalties**
+- **Description**: Allows vehicle owners to retrieve and view penalties associated with their vehicles, categorized by type.
+- **Primary actor**: Vehicle Owner, Traffic Policeman
+- **Goal**: To provide vehicle owners with an organized view of their penalties for easier management.
+- **Triggers**: Vehicle owner requests to view penalties.
+- **Preconditions**: 
+  - Vehicle owner is authenticated.
+  - Vehicle VIN is provided.
+  - Credit card details are entered for verification.
+- **Postconditions**: Vehicle owner can see penalties linked to their vehicle.
+- **Main scenario**:
+  1. Vehicle owner logs into the system.
+  2. Owner enters their vehicle's VIN.
+  3. System verifies the VIN and retrieves associated penalties.
+  4. Vehicle owner enters their credit card details for validation.
+  5. System validates the credit card information.
+  6. If valid, system displays the penalties.
+  7. Vehicle owner can filter penalties by type.
+- **Extensions**: 
+  - If the VIN is invalid, display an error message and prompt for re-entry.
+  - If the credit card validation fails, display an error message and prompt for re-entry.
+- **Special requirements**: 
+  - The system must ensure real-time data retrieval and secure handling of credit card information.
+
+---
+
+### Use-case 2
+- **Name**: **Settle Penalties and Process Payment**
+- **Description**: Allows vehicle owners to select penalties for payment and process the payment online.
+- **Primary actor**: Vehicle Owner
+- **Goal**: To enable vehicle owners to settle their penalties conveniently and securely.
+- **Triggers**: Vehicle owner selects penalties for payment.
+- **Preconditions**: 
+  - Vehicle owner has retrieved penalties.
+  - Owner selects penalties for payment.
+  - Credit card details are entered for payment processing.
+- **Postconditions**: Penalty records are updated, and a payment receipt is generated and sent to the owner.
+- **Main scenario**:
+  1. Vehicle owner selects penalties to settle.
+  2. System calculates the total penalty amount.
+  3. Vehicle owner enters their credit card details for payment.
+  4. System validates the credit card information.
+  5. System forwards the amount to qPay for processing.
+  6. qPay validates the payment and processes it.
+  7. System receives payment outcome from qPay.
+  8. If successful, the system updates penalty records and generates a receipt.
+  9. System sends a notification confirming the payment.
+- **Extensions**: 
+  - If the payment fails, display an error message and allow the owner to retry.
+  - If credit card validation fails, display an error message and prompt for re-entry.
+- **Special requirements**: 
+  - The system must ensure secure payment processing and data encryption.
+
+---
+
+### Use-case 3
+- **Name**: **Notify Vehicle Owners of New or Due Penalties**
+- **Description**: Sends notifications to vehicle owners about new penalties or approaching due dates for existing penalties.
+- **Primary actor**: Owner
+- **Goal**: To keep vehicle owners informed about their penalties.
+- **Triggers**: New penalty is added or an existing penalty's due date is approaching.
+- **Preconditions**: 
+  - New penalty is in the system or an existing penalty is nearing its due date.
+- **Postconditions**: Vehicle owner receives timely notifications regarding penalties.
+- **Main scenario**:
+  1. System detects a new penalty or an approaching due date.
+  2. System retrieves the contact information of the vehicle owner.
+  3. System sends an automated notification to the vehicle owner.
+- **Extensions**: 
+  - If the contact information is missing, log an error for manual follow-up.
+- **Special requirements**: 
+  - Notifications must be sent via email and/or SMS, depending on user preference.
+
+
+### Use-case 4
+- **Name**: **Manage Confiscating Orders**
+- **Description**: Allows traffic police to identify vehicles with excessive red-light offences, create confiscating orders, confirm them, and broadcast these orders to all relevant police departments.
+- **Primary actor**: Traffic Policeman
+- **Goal**: To enforce confiscation of vehicles that exceed a specified number of red-light offences and ensure proper communication with police departments.
+- **Triggers**: Traffic police requests to manage confiscating orders based on vehicle offences.
+- **Preconditions**: 
+  - Traffic police are authenticated.
+  - Vehicle offence data is available in the system.
+- **Postconditions**: 
+  - Confiscating orders are created, confirmed, and broadcast to relevant police departments.
+  - Vehicle registrations are cancelled, and owners are informed.
+- **Main scenario**:
+  1. Traffic police enters the desired time period and selects the red-light offence type.
+  2. System retrieves vehicles with red-light offences within the specified timeframe.
+  3. Traffic police selects vehicles that exceed the designated number of offences.
+  4. System creates a confiscating order for each selected vehicle.
+  5. System prompts traffic police for confirmation of the confiscating orders.
+  6. Traffic police confirms the orders.
+  7. System saves the confirmation and cancels the registrations of the vehicles.
+  8. System informs the vehicle owners about the confiscating orders.
+  9. System broadcasts the confirmed confiscating orders to all relevant police departments.
+- **Extensions**: 
+  - If no vehicles exceed the offence threshold, display a message indicating this.
+  - If confirmation is not received from the traffic police, the orders remain pending.
+  - If broadcasting fails, log the error for manual follow-up.
+- **Special requirements**: 
+  - The system must ensure secure data handling, accurate tracking of offences, and timely communication of orders.
+
 
 
 ## Accident section
