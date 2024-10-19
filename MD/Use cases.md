@@ -178,7 +178,7 @@
 
 ### Use-case 3
 - **Name**: **Manage Confiscating Orders**
-- **Description**: Allows traffic police to identify vehicles with excessive red-light offences, create confiscating orders, confirm them, and broadcast these orders to all relevant police departments.
+- **Description**: Allows traffic police to identify vehicles with excessive red-light offenced, create confiscating orders, confirm them, and broadcast these orders to all relevant police departments.
 - **Primary actor**: Traffic Policeman
 - **Goal**: To enforce confiscation of vehicles that exceed a specified number of red-light offences and ensure proper communication with police departments.
 - **Triggers**: Traffic police requests to manage confiscating orders based on vehicle offences.
