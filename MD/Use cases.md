@@ -158,35 +158,6 @@
 ---
 
 ### Use-case 2
-- **Name**: **Settle Penalties and Process Payment**
-- **Description**: Allows vehicle owners to select penalties for payment and process the payment online.
-- **Primary actor**: Vehicle Owner
-- **Goal**: To enable vehicle owners to settle their penalties conveniently and securely.
-- **Triggers**: Vehicle owner selects penalties for payment.
-- **Preconditions**: 
-  - Vehicle owner has retrieved penalties.
-  - Owner selects penalties for payment.
-  - Credit card details are entered for payment processing.
-- **Postconditions**: Penalty records are updated, and a payment receipt is generated and sent to the owner.
-- **Main scenario**:
-  1. Vehicle owner selects penalties to settle.
-  2. System calculates the total penalty amount.
-  3. Vehicle owner enters their credit card details for payment.
-  4. System validates the credit card information.
-  5. System forwards the amount to qPay for processing.
-  6. qPay validates the payment and processes it.
-  7. System receives payment outcome from qPay.
-  8. If successful, the system updates penalty records and generates a receipt.
-  9. System sends a notification confirming the payment.
-- **Extensions**: 
-  - If the payment fails, display an error message and allow the owner to retry.
-  - If credit card validation fails, display an error message and prompt for re-entry.
-- **Special requirements**: 
-  - The system must ensure secure payment processing and data encryption.
-
----
-
-### Use-case 3
 - **Name**: **Notify Vehicle Owners of New or Due Penalties**
 - **Description**: Sends notifications to vehicle owners about new penalties or approaching due dates for existing penalties.
 - **Primary actor**: Owner
@@ -205,7 +176,7 @@
   - Notifications must be sent via email and/or SMS, depending on user preference.
 
 
-### Use-case 4
+### Use-case 3
 - **Name**: **Manage Confiscating Orders**
 - **Description**: Allows traffic police to identify vehicles with excessive red-light offences, create confiscating orders, confirm them, and broadcast these orders to all relevant police departments.
 - **Primary actor**: Traffic Policeman
