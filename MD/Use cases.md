@@ -229,35 +229,13 @@ Name: Start Report Accident
   5. system save the details
   6. system call confirm fault method
   7. owner confirm his fault
-  8. system call generate report to create the report for the accident
+  8. system call generate report to create the report for the accident method
+  9. system call send report to insurance company method 
 - Extensions:
 	- 3a. if system did not retrieve VIN , owner should enter VIN again
 	- 8a. if owner did not confirm no report will be generated
 - Special requirements:
-
-
 ### Use-case 2
-
-- Name: Send report to insurance company
-- Description: System sends the report after creating it to the insurance company
-- Primary actor: 
-	- System (iQVR) 
-	- insurance company
-- Goal: successfully send report to insurance company 
-- Triggers: report gets created 
-- Preconditions:
-	- system created the report successfully 
-- Postconditions: 
-	- report get sent to insurance company
-- Main scenario:
-  1. System retrieve report 
-  2. System send report to insurance company
-  3. insurance company sends an acknowledgment
-  4. system call Record acknowledgment receipt method to save insurance receipt 
-  5. system make the report available for both parties after receiving acknowledgment 
-- Extensions:
-- Special requirements:
-### Use-case 3
 
 - Name: Retrieve Accident Report
 - Description: Accident report is available for authorized companies to retrieve 
