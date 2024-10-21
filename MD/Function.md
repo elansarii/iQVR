@@ -74,3 +74,4 @@
 | Send Notification to owner         |  Owner     |
 | Save confiscating confirmation         | -  |
 | Store vehicle fitness certificate  | Authorized workshop |
+|send Fitness Test Reminders| Owner<br>Authorized workshop |

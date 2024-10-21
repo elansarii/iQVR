@@ -297,3 +297,24 @@ Name: Start Report Accident
   - If the message failed to be deliverd to the owner, the system will send the message again.
 - **Special requirements**:
 	- The registered vechile information should be connected/related with the owner's contact information (e.g. phone number).
+
+### Use-case 3
+
+- **Name**: Send fitness certificate reminders
+- **Description**: This use case will remind/alert the vehile owner about the fitness certificate from the authorized workshop.
+- **Primary actor**: Vechile owner, authorized workshop
+- **Goal**: To remind the owner about expiration date of the fitness certificate. 
+- **Triggers**: When the fitness certificate of the vechile become close.
+- **Preconditions**:
+	- The vehicle must be registered in the iQVR system.
+- **Postconditions**:
+	- 
+- **Main scenario**:
+  1. 
+  2. 
+  3. 
+- **Extensions**:
+	- 
+  - 
+- **Special requirements**:
+	- 
