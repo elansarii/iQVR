@@ -300,7 +300,7 @@ Name: Start Report Accident
 
 ### Use-case 3
 
-- **Name**: Check fitness certificate information
+- **Name**: Check fitness certificate status
 - **Description**: This use case will make the owner able to view and check the fitness certificate status or to renew it if it is over 2 years old.
 - **Primary actor**: Vechile owner
 - **Goal**: The vechile owner can view the current information about the fitness certificate of the vechile. 
