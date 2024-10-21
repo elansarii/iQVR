@@ -129,3 +129,4 @@ light offence type from the system.
 	- The system generates a message detailing the violation, includes fine amount, payment deadlines, legal consequences. Or a message Confirmation regarding renew the insurance policy or the fitness certificate. 
 	- The message is automatically sent to the owner via (SMS, email, app notification).
 - The system should be able to handle and store the vehicle fitness certificate which is issued by an authorized workshop.
+- The technical section automate and provide reminders/alerts for vehicle owners regarding upcoming fitness tests.
