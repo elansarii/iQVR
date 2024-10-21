@@ -293,28 +293,29 @@ Name: Start Report Accident
   2. An SMS/email message will be generated describing the latest update.
   3. Send the message to the owner contact information.
 - **Extensions**:
-	- If the system does not have the contact information of the vechile's owner, The system will display a message to the owner to update his/her contact information.
-  - If the message failed to be deliverd to the owner, the system will send the message again.
+	- 3a. If the system does not have the contact information of the vechile's owner, The system will display a message to the owner to update his/her contact information when opening the application.
+  - 3b. If the message failed to be deliverd to the owner, the system will send the message again.
 - **Special requirements**:
 	- The registered vechile information should be connected/related with the owner's contact information (e.g. phone number).
 
 ### Use-case 3
 
-- **Name**: Send fitness certificate reminders
-- **Description**: This use case will remind/alert the vehile owner about the fitness certificate from the authorized workshop.
-- **Primary actor**: Vechile owner, authorized workshop
-- **Goal**: To remind the owner about expiration date of the fitness certificate. 
-- **Triggers**: When the fitness certificate of the vechile become close.
+- **Name**: Check fitness certificate information
+- **Description**: This use case will make the owner able to view and check the fitness certificate status or to renew it if it is over 2 years old.
+- **Primary actor**: Vechile owner
+- **Goal**: The vechile owner can view the current information about the fitness certificate of the vechile. 
+- **Triggers**: The vehicle owner and selects the option to view the fitness certificate status.
 - **Preconditions**:
 	- The vehicle must be registered in the iQVR system.
+  - The vehicle owner must have a fitness certificate issued for their vehicle. 
 - **Postconditions**:
-	- 
+	- The system displays the current status of the fitness certificate, such as: valid or not, Expiration date. 
 - **Main scenario**:
-  1. 
-  2. 
-  3. 
+  1. The vehicle owner logs into his account.
+  2. Select the opion of check the fitness certificate information
+  3. The system displays the current status.
 - **Extensions**:
-	- 
-  - 
+	- 3a. If the owner vechile does not have a fitness certificate, a the system will prompt a message asking the owner to get a fitness certificate.
+
 - **Special requirements**:
-	- 
+	- Any updates on the fitness certificate by the authorized workshop should be reflected on the fitness certificate information for the owner to check it.
