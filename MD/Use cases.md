@@ -301,7 +301,7 @@ Name: Start Report Accident
 ### Use-case 3
 
 - **Name**: Check fitness certificate status
-- **Description**: This use case will make the owner able to view and check the fitness certificate status and check the details of the workshop that issued the cerfificate.
+- **Description**: This use case will make the owner able to view and check the fitness certificate status and check the details of the workshop that issued the cerfificate using the application.
 - **Primary actor**: Vechile owner
 - **Goal**: The vechile owner can view the current information about the fitness certificate of the vechile. 
 - **Triggers**: The vehicle owner and selects the option to view the fitness certificate status.
