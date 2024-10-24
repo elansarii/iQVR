@@ -238,27 +238,8 @@ Name: Start Report Accident
 - Special requirements:
 	- System insure the company has the access to retrieve the report 
 ## Technical section
-### Use-case 1
-- **Name**: Get violated red-light cars
-- **Description**: The policeman can select the time period and the red-light violation and it will list the vehicles that match these conditions.
-- **Primary actor**: Policeman
-- **Goal**: To get all vehicles that violated the red-light traffic.
-- **Triggers**: The policeman wants to list all vehicles that violated the red-light traffic for specific time.
-- **Preconditions**: 
-	- There is at least a vehicle that violated the red-light traffic
-- **Postconditions**:
-	- Create a confiscating order for the violated vechils
-- **Main scenario**:
-  1. The policeman will enter a period time and choose the red-light violation.
-  2. If the system got the the confirmation from the policeman/officer --> they system will cancel the registration of those vehicles.
-  3. The violated car's owner will be informed about the order.
-  4. The system broadcasts the confiscating order for all police departments.
-- **Extensions**:
-	- If the system did not receive a confirmation from the policeman/officer the registration of these vechils will **Not** be cancelled. 
-- **Special requirements**:
-	- The confirmation of order for confiscating the car will be saved.
 
-### Use-case 2
+### Use-case 1
 
 - **Name**: Send notification to owner
 - **Description**: This use case is responsible for sending a notification for the vehicle owner.
@@ -279,7 +260,7 @@ Name: Start Report Accident
 - **Special requirements**:
 	- The registered vechile information should be connected/related with the owner's contact information (e.g. phone number).
 
-### Use-case 3
+### Use-case 2
 
 - **Name**: Check fitness certificate status
 - **Description**: This use case will make the owner able to view and check the fitness certificate status and check the details of the workshop that issued the cerfificate using the application.
