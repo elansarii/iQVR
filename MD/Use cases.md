@@ -139,16 +139,13 @@
 - **Preconditions**: 
   - Vehicle owner is authenticated.
   - Vehicle VIN is provided.
-  - Credit card details are entered for verification.
 - **Postconditions**: Vehicle owner can see penalties linked to their vehicle.
 - **Main scenario**:
   1. Vehicle owner logs into the system.
   2. Owner enters their vehicle's VIN.
   3. System verifies the VIN and retrieves associated penalties.
-  4. Vehicle owner enters their credit card details for validation.
-  5. System validates the credit card information.
-  6. If valid, system displays the penalties.
-  7. Vehicle owner can filter penalties by type.
+  4. If valid, system displays the penalties.
+  5. Vehicle owner can filter penalties by type.
 - **Extensions**: 
   - If the VIN is invalid, display an error message and prompt for re-entry.
   - If the credit card validation fails, display an error message and prompt for re-entry.
@@ -157,26 +154,10 @@
 
 ---
 
+
+
+
 ### Use-case 2
-- **Name**: **Notify Vehicle Owners of New or Due Penalties**
-- **Description**: Sends notifications to vehicle owners about new penalties or approaching due dates for existing penalties.
-- **Primary actor**: Owner
-- **Goal**: To keep vehicle owners informed about their penalties.
-- **Triggers**: New penalty is added or an existing penalty's due date is approaching.
-- **Preconditions**: 
-  - New penalty is in the system or an existing penalty is nearing its due date.
-- **Postconditions**: Vehicle owner receives timely notifications regarding penalties.
-- **Main scenario**:
-  1. System detects a new penalty or an approaching due date.
-  2. System retrieves the contact information of the vehicle owner.
-  3. System sends an automated notification to the vehicle owner.
-- **Extensions**: 
-  - If the contact information is missing, log an error for manual follow-up.
-- **Special requirements**: 
-  - Notifications must be sent via email and/or SMS, depending on user preference.
-
-
-### Use-case 3
 - **Name**: **Manage Confiscating Orders**
 - **Description**: Allows traffic police to identify vehicles with excessive red-light offenced, create confiscating orders, confirm them, and broadcast these orders to all relevant police departments.
 - **Primary actor**: Traffic Policeman
