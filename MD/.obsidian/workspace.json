@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Use cases.md",
+                "file": "Function.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Use cases"
+              "title": "Function"
             }
           }
         ]
@@ -164,9 +164,9 @@
   },
   "active": "a16e6a441c829894",
   "lastOpenFiles": [
-    "Function.md",
     "Requirements.md",
     "Use cases.md",
+    "Function.md",
     "Functions.md",
     "Welcome.md"
   ]
