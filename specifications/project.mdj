@@ -4598,8 +4598,8 @@
 										"$ref": "AAAAAAGSuylzikWnxi4="
 									},
 									"font": "Arial;13;0",
-									"left": 1498,
-									"top": 225,
+									"left": 466,
+									"top": 113,
 									"width": 54.18994140625,
 									"height": 13,
 									"text": "Pay",
@@ -4612,15 +4612,15 @@
 										"$ref": "AAAAAAGSuylzikWnxi4="
 									},
 									"font": "Arial;13;0",
-									"left": 1498,
-									"top": 197,
+									"left": 466,
+									"top": 85,
 									"width": 54.18994140625,
 									"height": 13
 								}
 							],
 							"font": "Arial;13;0",
-							"left": 1488,
-							"top": 192,
+							"left": 456,
+							"top": 80,
 							"width": 74.18994140625,
 							"height": 56,
 							"nameLabel": {
