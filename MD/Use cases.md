@@ -263,9 +263,9 @@ Name: Start Report Accident
 ### Use-case 2
 
 - **Name**: Check fitness certificate status
-- **Description**: This use case will make the owner able to view and check the fitness certificate status and check the details of the workshop that issued the cerfificate using the application.
-- **Primary actor**: Vechile owner
-- **Goal**: The vechile owner can view the current information about the fitness certificate of the vechile. 
+- **Description**: This use case will make the owner able to view and check the fitness certificate status and check the details of the workshop that issued the certificate using the application.
+- **Primary actor**: Vehicle owner
+- **Goal**: The Vehicle owner can view the current information about the fitness certificate of the Vehicle. 
 - **Triggers**: The vehicle owner and selects the option to view the fitness certificate status.
 - **Preconditions**:
 	- The vehicle must be registered in the iQVR system.

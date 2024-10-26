@@ -46,6 +46,12 @@
 | Record Payment Outcome and Generate Receipt                     | -                       |
 | Update Vehicle Records                                          | -                       |
 | Categorize penalties and enhance system navigation.(Assumption) | -                       |
+| Get violated red-light cars                                     | Policeman               |
+| Create confiscating order                                       | Policeman               |
+| Cancel registration                                             | -                       |
+| Inform owner about confiscating                                 | Owner                   |
+| Send broadcasts to all departments                              | -                       |
+| Save confiscating confirmation                                  | -                       |
 
 
 ## Accident section
@@ -64,14 +70,8 @@
 
 ## Technical section
 
-| Function | Actor |
-| :------- | :---- |
-| Get violated red-light cars        | Policeman      |
-| Create confiscating order         |  Policeman   |
-| Cancel registration          | - |
-| Inform owner about confiscating| Owner      |
-| Send broadcasts to all departments         |-   |
-| Send Notification to owner         |  Owner     |
-| Save confiscating confirmation         | -  |
-| Store vehicle fitness certificate  | Authorized workshop |
-|Check fitness certificate status| Owner|
+| Function                          | Actor               |
+| :-------------------------------- | :------------------ |
+| Send Notification to owner        | Owner               |
+| Store vehicle fitness certificate | Authorized workshop |
+| Check fitness certificate status  | Owner               |
