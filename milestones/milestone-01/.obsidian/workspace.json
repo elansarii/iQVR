@@ -1,0 +1,167 @@
+{
+  "main": {
+    "id": "7ab8a0260e0d580e",
+    "type": "split",
+    "children": [
+      {
+        "id": "1be874fefa2f4f9b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3c36db07bc74241c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "diagram-comparison.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "diagram-comparison"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "cfe674b6f8cb032e",
+    "type": "split",
+    "children": [
+      {
+        "id": "dee26725730ea249",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8565dbc8463bf8c8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "9be34190f55436db",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "1a977b92be293091",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "e23787daf9246aa2",
+    "type": "split",
+    "children": [
+      {
+        "id": "a89a7bd3a8c59c44",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "69e65946d01f5ca1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "diagram-comparison.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for diagram-comparison"
+            }
+          },
+          {
+            "id": "c3b9e4a4cffacc23",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "diagram-comparison.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from diagram-comparison"
+            }
+          },
+          {
+            "id": "ec5c10606561e45d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "b125012daa60bf24",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "diagram-comparison.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of diagram-comparison"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "3c36db07bc74241c",
+  "lastOpenFiles": []
+}
