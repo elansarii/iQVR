@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "requirements.md",
+                "file": "diagram-comparison.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "requirements"
+              "title": "diagram-comparison"
             }
           }
         ]
@@ -164,9 +164,9 @@
   },
   "active": "8d424bbf0b48e084",
   "lastOpenFiles": [
+    "requirements.md",
     "readme.md",
     "diagram-comparison.md",
-    "design-principles.md",
-    "requirements.md"
+    "design-principles.md"
   ]
 }
