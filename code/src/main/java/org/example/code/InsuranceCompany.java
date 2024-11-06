@@ -6,7 +6,7 @@ import java.util.*;
 import java.io.*;
 import java.util.*;
 
-public class InsuranceCompnay {
+public class InsuranceCompany {
 
     private String companyName;
     private String phone;
@@ -14,7 +14,7 @@ public class InsuranceCompnay {
     private List<String> issuedPolicies;
     private String address;
 
-    public InsuranceCompnay() {
+    public InsuranceCompany() {
     }
 
     public void purchaseInsurancePolicy() {
