@@ -1,5 +1,3 @@
-package org.example.code;
-
 import atlantafx.base.theme.PrimerDark;
 import atlantafx.base.theme.PrimerLight;
 import javafx.application.Application;
@@ -8,6 +6,8 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+
+import static javafx.application.Application.launch;
 
 public class Launcher extends Application {
 
@@ -26,5 +26,5 @@ public class Launcher extends Application {
 }
 
 public static void main(String[] args) {
-
+    launch(args);
 }
