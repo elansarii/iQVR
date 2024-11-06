@@ -36,7 +36,7 @@ public class Owner {
                 owner.getAddress()
         );
     }
-
+//this method transfers the ownership of a vehicle from one owner to another
     public void transferOwner(String currentOwnerId, String vin, String newOwnerId) {
         Owner currentOwner = findOwnerById(currentOwnerId);
         Owner newOwner = findOwnerById(newOwnerId);
