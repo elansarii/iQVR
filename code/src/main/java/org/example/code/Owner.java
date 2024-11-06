@@ -10,6 +10,7 @@ public class Owner {
     private String phoneNumber;
     private ArrayList<Vehicle> ownedVehicles;
     private ArrayList<Owner> owners;
+    private ArrayList<Payment> unpaidBills;
 
     public Owner(String name, String address, String qid, String phoneNumber, List<Vehicle> ownedVehicles) {
         this.name = name;
@@ -41,15 +42,17 @@ public class Owner {
         Owner currentOwner = findOwnerById(currentOwnerId);
         Owner newOwner = findOwnerById(newOwnerId);
 
+
+
         if (currentOwner == null || newOwner == null) {
-            System.out.println("Owner not found");
+            System.out.println("Owner information not correct");
             return;
         }
 
         Vehicle vehicle = findVehicleByVin(currentOwner, vin);
 
         if (vehicle == null) {
-            System.out.println("Vehicle not found");
+            System.out.println("Vehicle information not correct");
             return;
         }
 

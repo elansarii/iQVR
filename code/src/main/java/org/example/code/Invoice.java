@@ -13,7 +13,6 @@ public class Invoice {
     private String relatedOwnerQid;
     private String paymentStatus;
     private String description;
-    private String attribute1;
 
     public Invoice() {
     }
