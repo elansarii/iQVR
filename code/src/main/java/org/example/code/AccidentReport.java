@@ -14,7 +14,6 @@ public class AccidentReport {
     private Time time;
     private String location;
     private String description;
-    private String attribute1;
 
     public AccidentReport() {
     }
