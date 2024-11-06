@@ -5,14 +5,14 @@ import java.time.LocalDate;
 
 public class Invoice {
 
-    private String invoiceId;
-    private double amount;
-    private LocalDate dueDate;
-    private LocalDate issueDate;
-    private String vehicleVin;
-    private String ownerQid;
+    private final String invoiceId;
+    private final double amount;
+    private final LocalDate dueDate;
+    private final LocalDate issueDate;
+    private final String vehicleVin;
+    private final String ownerQid;
     private String paymentStatus;
-    private String description;
+    private final String description;
 
     public Invoice(double amount, String vehicleVin,
                    String ownerQid, String description) {
@@ -31,23 +31,44 @@ public class Invoice {
     }
     public Invoice generateInvoice() {
 
-        System.out.println("Invoice generated with ID: " + this.invoiceId);
+        System.out.println("Invoice generated with ID: " + getInvoiceId());
         return this;
     }
 
-    public void sendInvoice() {
-        // TODO implement here
-    }
-
-    public void checkUnpaid() {
-        // TODO implement here
-    }
-
-    public void checkPaid() {
-        // TODO implement here
-    }
+//    public void sendInvoice() {
+//        // TODO implement here
+//    }
 
     public String getPaymentStatus() {
         return paymentStatus;
+    }
+
+
+    public String getInvoiceId() {
+        return invoiceId;
+    }
+
+    public double getAmount() {
+        return amount;
+    }
+
+    public LocalDate getDueDate() {
+        return dueDate;
+    }
+
+    public LocalDate getIssueDate() {
+        return issueDate;
+    }
+
+    public String getVehicleVin() {
+        return vehicleVin;
+    }
+
+    public String getOwnerQid() {
+        return ownerQid;
+    }
+
+    public String getDescription() {
+        return description;
     }
 }
