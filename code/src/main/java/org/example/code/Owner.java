@@ -1,6 +1,5 @@
 package org.example.code;
 
-import java.io.*;
 import java.util.*;
 
 public class Owner {
@@ -9,9 +8,10 @@ public class Owner {
     private String address;
     private String qid;
     private String phoneNumber;
-    private ArrayList<String> ownedVehicles;
+    private ArrayList<Vehicle> ownedVehicles;
+    private ArrayList<Owner> owners;
 
-    public Owner(String name, String address, String qid, String phoneNumber, List<String> ownedVehicles) {
+    public Owner(String name, String address, String qid, String phoneNumber, List<Vehicle> ownedVehicles) {
         this.name = name;
         this.address = address;
         this.qid = qid;
@@ -22,12 +22,13 @@ public class Owner {
 
     public void listOwnedVehicles() {
         int counter = 1;
-        for (String vehicle : ownedVehicles) {
+        for (Vehicle vehicle : ownedVehicles) {
             System.out.printf("%d- %s%n", counter++, vehicle);
         }
     }
 
     public void ownerDetails(Owner owner) {
+
         System.out.printf("Name: %s%nQID: %s%nPhone number: %s%nAddress: %s%n",
                 owner.getName(),
                 owner.getQid(),
@@ -36,48 +37,64 @@ public class Owner {
         );
     }
 
-    public void transferOwner() {
-        // TODO implement here
+    public void transferOwner(String currentOwnerId, String vin, String newOwnerId) {
+        Owner currentOwner = findOwnerById(currentOwnerId);
+        Owner newOwner = findOwnerById(newOwnerId);
+
+        if (currentOwner == null || newOwner == null) {
+            System.out.println("Owner not found");
+            return;
+        }
+
+        Vehicle vehicle = findVehicleByVin(currentOwner, vin);
+
+        if (vehicle == null) {
+            System.out.println("Vehicle not found");
+            return;
+        }
+
+        currentOwner.getOwnedVehicles().remove(vehicle);
+        newOwner.getOwnedVehicles().add(vehicle);
+        vehicle.setOwner(newOwner);
+        vehicle.setPrevOwner(currentOwner);
+    }
+
+    private Owner findOwnerById(String ownerId) {
+        for (Owner owner : owners) {
+            if (owner.getQid().equals(ownerId)) {
+                return owner;
+            }
+        }
+        return null;
+    }
+
+    private Vehicle findVehicleByVin(Owner owner, String vin) {
+        for (Vehicle vehicle : owner.getOwnedVehicles()) {
+            if (vehicle.getVin().equals(vin)) {
+                return vehicle;
+            }
+        }
+        return null;
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getAddress() {
         return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
     }
 
     public String getQid() {
         return qid;
     }
 
-    public void setQid(String qid) {
-        this.qid = qid;
-    }
-
     public String getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
-    }
-
-    public ArrayList<String> getOwnedVehicles() {
+    public ArrayList<Vehicle> getOwnedVehicles() {
         return ownedVehicles;
-    }
-
-    public void setOwnedVehicles(ArrayList<String> ownedVehicles) {
-        this.ownedVehicles = ownedVehicles;
     }
 }
 
