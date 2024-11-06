@@ -27,8 +27,13 @@ public class Owner {
         }
     }
 
-    public void ownerDetails() {
-        // TODO implement here
+    public void ownerDetails(Owner owner) {
+        System.out.printf("Name: %s%nQID: %s%nPhone number: %s%nAddress: %s%n",
+                owner.getName(),
+                owner.getQid(),
+                owner.getPhoneNumber(),
+                owner.getAddress()
+        );
     }
 
     public void transferOwner() {
