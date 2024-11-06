@@ -46,4 +46,8 @@ public class Invoice {
     public void checkPaid() {
         // TODO implement here
     }
+
+    public String getPaymentStatus() {
+        return paymentStatus;
+    }
 }

@@ -41,6 +41,10 @@ public class Owner {
         Owner currentOwner = findOwnerById(currentOwnerId);
         Owner newOwner = findOwnerById(newOwnerId);
 
+        if(!checkBills(currentOwner)){
+            System.out.println("You have unpaid bills");
+            return;
+        }
 
         if (currentOwner == null || newOwner == null) {
             System.out.println("Owner information not correct");
@@ -61,6 +65,14 @@ public class Owner {
         System.out.printf("Vehicle with VIN %s has been transferred from %s to %s%n", vin, currentOwner.getName(), newOwner.getName());
         newOwner.getInvoices().add(new Invoice(100, vin, newOwnerId, "Transfer of ownership").generateInvoice());
         //new Invoice(100, vin, newOwnerId, "Transfer of ownership").generateInvoice();
+    }
+    private Boolean checkBills(Owner owner){
+        for (Invoice bill : owner.getInvoices()) {
+            if (bill.getPaymentStatus().equals("unpaid")) {
+                return false;
+            }
+        }
+        return true;
     }
 
     private Owner findOwnerById(String ownerId) {
