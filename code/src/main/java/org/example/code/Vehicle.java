@@ -70,4 +70,12 @@ public class Vehicle {
     public FitnessCertificate getFitnessCertNum() {
         return fitnessCertificate;
     }
+
+    public void setOwner(Owner newOwner) {
+        this.owner = newOwner;
+    }
+
+    public void setPrevOwner(Owner currentOwner) {
+        this.prevOwner = currentOwner;
+    }
 }
