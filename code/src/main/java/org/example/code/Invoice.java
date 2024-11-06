@@ -1,24 +1,38 @@
 package org.example.code;
 
-import java.io.*;
 import java.util.*;
+import java.time.LocalDate;
 
 public class Invoice {
 
     private String invoiceId;
     private double amount;
-    private Date dueDate;
-    private Date issueDate;
-    private String relatedVehicleVin;
-    private String relatedOwnerQid;
+    private LocalDate dueDate;
+    private LocalDate issueDate;
+    private String vehicleVin;
+    private String ownerQid;
     private String paymentStatus;
     private String description;
 
-    public Invoice() {
+    public Invoice(double amount, String vehicleVin,
+                   String ownerQid, String description) {
+        this.invoiceId = generateInvoiceId();
+        this.amount = amount;
+        this.issueDate = LocalDate.now();
+        this.dueDate = this.issueDate.plusDays(30);
+        this.vehicleVin = vehicleVin;
+        this.ownerQid = ownerQid;
+        this.paymentStatus = "unpaid";
+        this.description = description;
     }
 
-    public void generateInvoice() {
-        // TODO implement here
+    private String generateInvoiceId() {
+        return UUID.randomUUID().toString();
+    }
+    public Invoice generateInvoice() {
+
+        System.out.println("Invoice generated with ID: " + this.invoiceId);
+        return this;
     }
 
     public void sendInvoice() {

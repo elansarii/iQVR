@@ -10,7 +10,7 @@ public class Owner {
     private String phoneNumber;
     private ArrayList<Vehicle> ownedVehicles;
     private ArrayList<Owner> owners;
-    private ArrayList<Payment> unpaidBills;
+    private ArrayList<Invoice> bills;
 
     public Owner(String name, String address, String qid, String phoneNumber, List<Vehicle> ownedVehicles) {
         this.name = name;
@@ -37,11 +37,9 @@ public class Owner {
                 owner.getAddress()
         );
     }
-//this method transfers the ownership of a vehicle from one owner to another
     public void transferOwner(String currentOwnerId, String vin, String newOwnerId) {
         Owner currentOwner = findOwnerById(currentOwnerId);
         Owner newOwner = findOwnerById(newOwnerId);
-
 
 
         if (currentOwner == null || newOwner == null) {
@@ -60,6 +58,9 @@ public class Owner {
         newOwner.getOwnedVehicles().add(vehicle);
         vehicle.setOwner(newOwner);
         vehicle.setPrevOwner(currentOwner);
+        System.out.printf("Vehicle with VIN %s has been transferred from %s to %s%n", vin, currentOwner.getName(), newOwner.getName());
+        newOwner.getInvoices().add(new Invoice(100, vin, newOwnerId, "Transfer of ownership").generateInvoice());
+        //new Invoice(100, vin, newOwnerId, "Transfer of ownership").generateInvoice();
     }
 
     private Owner findOwnerById(String ownerId) {
@@ -80,6 +81,11 @@ public class Owner {
         return null;
     }
 
+
+
+
+
+
     public String getName() {
         return name;
     }
@@ -98,6 +104,9 @@ public class Owner {
 
     public ArrayList<Vehicle> getOwnedVehicles() {
         return ownedVehicles;
+    }
+    public ArrayList<Invoice> getInvoices() {
+        return bills;
     }
 }
 
