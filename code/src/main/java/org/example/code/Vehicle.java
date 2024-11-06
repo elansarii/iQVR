@@ -9,12 +9,12 @@ public class Vehicle {
     private String make;
     private String model;
     private int year;
-    private String regNumber;
+    private Registration registration;
     private boolean isRegistered;
-    private String owner;
-    private String prevOwner;
-    private String insurancePolicyNum;
-    private String fitnessCertNum;
+    private Owner owner;
+    private Owner prevOwner;
+    private InsurancePolicy insurancePolicy;
+    private FitnessCertificate fitnessCertificate;
 
     public Vehicle() {
     }
@@ -29,5 +29,45 @@ public class Vehicle {
 
     public void updateOwner() {
         // TODO implement here
+    }
+
+    public String getVin() {
+        return vin;
+    }
+
+    public String getMake() {
+        return make;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public Registration getRegNumber() {
+        return registration;
+    }
+
+    public boolean isRegistered() {
+        return isRegistered;
+    }
+
+    public Owner getOwner() {
+        return owner;
+    }
+
+    public Owner getPrevOwner() {
+        return prevOwner;
+    }
+
+    public InsurancePolicy getInsurancePolicyNum() {
+        return insurancePolicy;
+    }
+
+    public FitnessCertificate getFitnessCertNum() {
+        return fitnessCertificate;
     }
 }
