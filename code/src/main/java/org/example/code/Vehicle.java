@@ -30,4 +30,44 @@ public class Vehicle {
     public void updateOwner() {
         // TODO implement here
     }
+
+    public String getVin() {
+        return vin;
+    }
+
+    public String getMake() {
+        return make;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public String getRegNumber() {
+        return regNumber;
+    }
+
+    public boolean isRegistered() {
+        return isRegistered;
+    }
+
+    public String getOwner() {
+        return owner;
+    }
+
+    public String getPrevOwner() {
+        return prevOwner;
+    }
+
+    public String getInsurancePolicyNum() {
+        return insurancePolicyNum;
+    }
+
+    public String getFitnessCertNum() {
+        return fitnessCertNum;
+    }
 }
