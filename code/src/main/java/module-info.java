@@ -1,7 +1,7 @@
 module org.example.code {
-    requires javafx.controls;
     requires javafx.fxml;
     requires java.sql;
+    requires atlantafx.base;
 
 
     opens org.example.code to javafx.fxml;
