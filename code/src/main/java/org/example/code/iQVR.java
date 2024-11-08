@@ -10,7 +10,7 @@ import javafx.stage.StageStyle;
 
 import java.util.Objects;
 
-public class HelloApplication extends Application {
+public class iQVR extends Application {
 
     private double x = 0;
     private double y = 0;

@@ -4,7 +4,7 @@ import javafx.event.ActionEvent;
 
 import static java.lang.System.exit;
 
-public class HelloController {
+public class LoginController {
     public void loginUser(ActionEvent actionEvent) {
         System.out.println("Admin logged in");
     }
