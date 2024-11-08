@@ -1,5 +1,5 @@
 .uniform-gradient {
-    -fx-background-color: linear-gradient(to bottom right, #454555, #aaaabc);
+    -fx-background-color: linear-gradient(to bottom right, #8a1538, #7b2555);
 }
 
 .close {
@@ -11,7 +11,7 @@
 }
 
 .transfer-btn {
-    -fx-background-color: linear-gradient(to bottom, #0047aa, #008ad9);
+    -fx-background-color: linear-gradient(to bottom, #efbf04, #a38d5a);
     -fx-background-radius: 5px;
     -fx-text-fill: #fff;
     -fx-font-size: 14px;
@@ -19,11 +19,11 @@
     -fx-cursor: hand;
 }
 .transfer-btn:hover {
-    -fx-background-color: linear-gradient(to bottom, #008ad9, #00c5dc);
+    -fx-background-color: linear-gradient(to bottom, #efbf04, #ffefca);
 }
 
 .report-btn {
-    -fx-background-color: linear-gradient(to bottom, #0047aa, #008ad9);
+    -fx-background-color: linear-gradient(to bottom, #efbf04, #a38d5a);
     -fx-background-radius: 5px;
     -fx-text-fill: #fff;
     -fx-font-size: 14px;
@@ -31,5 +31,5 @@
     -fx-cursor: hand;
 }
 .report-btn:hover {
-    -fx-background-color: linear-gradient(to bottom, #008ad9, #00c5dc);
+    -fx-background-color: linear-gradient(to bottom, #efbf04, #ffefca);
 }
