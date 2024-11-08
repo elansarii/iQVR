@@ -1,5 +1,5 @@
 .left-form {
-    -fx-background-color: linear-gradient(to bottom right, #194dee, #0099e0);
+    -fx-background-color: linear-gradient(to bottom right, #454555, #aaaabc);
     -fx-border-color: #000;
     -fx-border-width: .4px 0px .4px .4px;
 }
@@ -29,12 +29,12 @@
 }
 .textfield:focused {
     -fx-background-color: #fff;
-    -fx-border-color: linear-gradient(to bottom right, #194dee, #0099e0);
+    -fx-border-color: linear-gradient(to bottom right, #0047aa, #008ad9);
     -fx-border-width: .8px;
 }
 
 .login-btn {
-    -fx-background-color: linear-gradient(to bottom, #00a4af, #00ac79);
+    -fx-background-color: linear-gradient(to bottom, #0047aa, #008ad9);
     -fx-background-radius: 5px;
     -fx-text-fill: #fff;
     -fx-font-size: 14px;
@@ -42,5 +42,5 @@
     -fx-cursor: hand;
 }
 .login-btn:hover {
-    -fx-background-color: linear-gradient(to bottom, #6bbaa3, #c7fceb);
+    -fx-background-color: linear-gradient(to bottom, #008ad9, #00c5dc);
 }
