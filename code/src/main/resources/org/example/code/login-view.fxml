@@ -29,7 +29,7 @@
                 </AnchorPane>
                 <AnchorPane layoutX="300.0" prefHeight="400.0" prefWidth="300.0" styleClass="right-form" stylesheets="@loginDesign.css">
                     <children>
-                        <Label layoutX="20.0" layoutY="99.0" text="Welcome back!" textFill="#002a6b">
+                        <Label layoutX="20.0" layoutY="99.0" text="Welcome back!" textFill="#194dee">
                             <font>
                                 <Font name="Tahoma Bold" size="17.0" />
                             </font>

@@ -1,0 +1,35 @@
+.uniform-gradient {
+    -fx-background-color: linear-gradient(to bottom right, #194dee, #0099e0);
+}
+
+.close {
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+.close:hover {
+    -fx-background-color: #ff3547;
+}
+
+.transfer-btn {
+    -fx-background-color: linear-gradient(to bottom, #00a4af, #00ac79);
+    -fx-background-radius: 5px;
+    -fx-text-fill: #fff;
+    -fx-font-size: 14px;
+    -fx-font-family: "Arial";
+    -fx-cursor: hand;
+}
+.transfer-btn:hover {
+    -fx-background-color: linear-gradient(to bottom, #6bbaa3, #c7fceb);
+}
+
+.report-btn {
+    -fx-background-color: linear-gradient(to bottom, #00a4af, #00ac79);
+    -fx-background-radius: 5px;
+    -fx-text-fill: #fff;
+    -fx-font-size: 14px;
+    -fx-font-family: "Arial";
+    -fx-cursor: hand;
+}
+.report-btn:hover {
+    -fx-background-color: linear-gradient(to bottom, #6bbaa3, #c7fceb);
+}
