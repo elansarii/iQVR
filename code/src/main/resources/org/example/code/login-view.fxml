@@ -15,12 +15,12 @@
             <children>
                 <AnchorPane prefHeight="400.0" prefWidth="300.0" styleClass="left-form" stylesheets="@loginDesign.css">
                     <children>
-                        <ImageView fitHeight="124.0" fitWidth="130.0" layoutX="67.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="124.0" fitWidth="130.0" layoutX="88.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
                             <image>
                                 <Image url="@car-icon-1.png" />
                             </image>
                         </ImageView>
-                        <Label layoutX="78.0" layoutY="177.0" text="iQVR System" textFill="WHITE">
+                        <Label layoutX="99.0" layoutY="200.0" text="iQVR System" textFill="WHITE">
                             <font>
                                 <Font name="Tahoma" size="18.0" />
                             </font>
@@ -29,7 +29,7 @@
                 </AnchorPane>
                 <AnchorPane layoutX="300.0" prefHeight="400.0" prefWidth="300.0" styleClass="right-form" stylesheets="@loginDesign.css">
                     <children>
-                        <Label layoutX="20.0" layoutY="99.0" text="Welcome back!" textFill="#368981">
+                        <Label layoutX="20.0" layoutY="99.0" text="Welcome back!" textFill="#002a6b">
                             <font>
                                 <Font name="Tahoma Bold" size="17.0" />
                             </font>
