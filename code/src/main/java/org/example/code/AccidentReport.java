@@ -1,31 +1,40 @@
 package org.example.code;
-// I love Egyptians
-// SUIIII
+
 import java.io.*;
 import java.sql.Time;
+import java.time.LocalDate;
 import java.util.*;
 
 public class AccidentReport {
-
+    private Vehicle ownerv;
     private String reportId;
     private String ownerVin;
     private String victimVin;
-    private Date date;
+    private LocalDate date;
     private Time time;
     private String location;
     private String description;
 
 //finally works
 
+
+
     public AccidentReport() {
+    }
+    public void reportAccident(){
+        Vehicle offending = ownerv.findVehicleByVin(ownerVin);
+        Vehicle victim = ownerv.findVehicleByVin(victimVin);
+        date= LocalDate.now();
+
+
     }
 
     public void generateReport() {
-        // TODO implement here
+
     }
 
     public void confirmFault() {
-        // TODO implement here
+
     }
 
     public void enterDetails() {
