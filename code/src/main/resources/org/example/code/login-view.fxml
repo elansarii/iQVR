@@ -15,14 +15,14 @@
             <children>
                 <AnchorPane prefHeight="400.0" prefWidth="300.0" styleClass="left-form" stylesheets="@loginDesign.css">
                     <children>
-                        <ImageView fitHeight="124.0" fitWidth="130.0" layoutX="88.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="124.0" fitWidth="130.0" layoutX="88.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
                             <image>
                                 <Image url="@car-icon-1.png" />
                             </image>
                         </ImageView>
-                        <Label layoutX="99.0" layoutY="200.0" text="iQVR System" textFill="WHITE">
+                        <Label layoutX="100.0" layoutY="200.0" text="iQVR System" textFill="WHITE">
                             <font>
-                                <Font name="Tahoma" size="18.0" />
+                                <Font size="20.0" />
                             </font>
                         </Label>
                     </children>
@@ -31,7 +31,7 @@
                     <children>
                         <Label layoutX="20.0" layoutY="99.0" text="Welcome back!" textFill="#efbf04">
                             <font>
-                                <Font name="Tahoma Bold" size="17.0" />
+                                <Font name="System Bold" size="20.0" />
                             </font>
                         </Label>
                         <TextField fx:id="name" layoutX="40.0" layoutY="144.0" onAction="#loginUser" prefHeight="30.0" prefWidth="220.0" promptText="Name" styleClass="textfield" stylesheets="@loginDesign.css" />
