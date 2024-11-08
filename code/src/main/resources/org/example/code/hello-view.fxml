@@ -1,16 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="org.example.code.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.code.HelloController">
+    <children>
+        <AnchorPane fx:id="main_form" prefHeight="200.0" prefWidth="200.0">
+            <children>
+                <AnchorPane prefHeight="400.0" prefWidth="300.0" styleClass="left-form" stylesheets="@loginDesign.css">
+                    <children>
+                        <Label layoutX="26.0" layoutY="177.0" text="iQVR System" textFill="WHITE">
+                            <font>
+                                <Font name="Tahoma" size="18.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+                <AnchorPane layoutX="300.0" prefHeight="400.0" prefWidth="300.0" styleClass="right-form" stylesheets="@loginDesign.css">
+                    <children>
+                        <Label layoutX="20.0" layoutY="99.0" text="Welcome back!" textFill="#368981">
+                            <font>
+                                <Font name="Tahoma Bold" size="17.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="name" layoutX="40.0" layoutY="144.0" onAction="#loginUser" prefHeight="30.0" prefWidth="220.0" promptText="Name" styleClass="textfield" stylesheets="@loginDesign.css" />
+                        <TextField fx:id="qid" layoutX="40.0" layoutY="185.0" onAction="#loginUser" prefHeight="30.0" prefWidth="220.0" promptText="QID" styleClass="textfield" stylesheets="@loginDesign.css" />
+                        <Button fx:id="loginBtn" layoutX="40.0" layoutY="238.0" mnemonicParsing="false" onAction="#loginUser" prefHeight="40.0" prefWidth="220.0" styleClass="login-btn" stylesheets="@loginDesign.css" text="Login" />
+                        <Button fx:id="close" layoutX="248.0" layoutY="14.0" mnemonicParsing="false" onAction="#close" prefHeight="24.0" prefWidth="58.0" styleClass="close" stylesheets="@loginDesign.css" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0" />
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>

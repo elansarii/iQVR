@@ -1,14 +1,15 @@
 package org.example.code;
 
-import javafx.fxml.FXML;
-import javafx.scene.control.Label;
+import javafx.event.ActionEvent;
+
+import static java.lang.System.exit;
 
 public class HelloController {
-    @FXML
-    private Label welcomeText;
+    public void loginUser(ActionEvent actionEvent) {
+        System.out.println("Admin logged in");
+    }
 
-    @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+    public void close(ActionEvent actionEvent) {
+        exit(0);
     }
 }
