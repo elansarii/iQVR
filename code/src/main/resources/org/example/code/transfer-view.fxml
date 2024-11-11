@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" prefWidth="600" prefHeight="400">
+    <stylesheets>
+        <URL value="@choiceDesign.css" />
+        <URL value="@loginDesign.css" />
+    </stylesheets>
+
+    <VBox alignment="CENTER" spacing="20" prefWidth="400" AnchorPane.topAnchor="50" AnchorPane.leftAnchor="100">
+        <!-- Title Label -->
+        <Label text="Transfer Ownership" styleClass="label-welcome" />
+
+        <!-- Current Owner Section -->
+        <VBox spacing="10">
+            <Label text="Current Owner Information" styleClass="label-welcome"/>
+            <TextField promptText="Current Owner Name" styleClass="textfield" fx:id="currentOwnerName"/>
+            <TextField promptText="Current Owner QID" styleClass="textfield" fx:id="currentOwnerQID"/>
+            <TextField promptText="VIN Number" styleClass="textfield" fx:id="vinNumber"/>
+        </VBox>
+
+        <!-- New Owner Section -->
+        <VBox spacing="10">
+            <Label text="New Owner Information" styleClass="label-welcome"/>
+            <TextField promptText="New Owner Name" styleClass="textfield" fx:id="newOwnerName"/>
+            <TextField promptText="New Owner QID" styleClass="textfield" fx:id="newOwnerQID"/>
+            <TextField promptText="Phone Number" styleClass="textfield" fx:id="phoneNumber"/>
+        </VBox>
+
+        <!-- Submit Button -->
+        <Button text="Submit Transfer" styleClass="transfer-btn" fx:id="submitTransferButton"/>
+    </VBox>
+</AnchorPane>
