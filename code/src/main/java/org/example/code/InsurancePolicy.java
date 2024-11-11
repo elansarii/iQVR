@@ -2,6 +2,8 @@ package org.example.code;
 
 import java.io.*;
 import java.util.*;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class InsurancePolicy {
 
@@ -14,15 +16,21 @@ public class InsurancePolicy {
     public InsurancePolicy() {
     }
 
-    public void validateInsurancePolicy() {
-        // TODO implement here
+    public boolean validateInsurancePolicy() {
+        Date today = new Date();
+        return !today.before(issueDate) && !today.after(expiryDate);
     }
 
-    public void getInsurancePolicyDetails() {
-        // TODO implement here
+    public String getInsurancePolicyDetails() {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        return "Policy Number: " + policyNumber + "\n" +
+                "Insurance Company: " + insuranceCompany + "\n" +
+                "Issue Date: " + sdf.format(issueDate) + "\n" +
+                "Expiry Date: " + sdf.format(expiryDate) + "\n" +
+                "VIN: " + vin;
     }
 
     public void updateInsurancePolicy() {
-        // TODO implement here
+//        this.expiryDate = newExpiryDate;
     }
 }

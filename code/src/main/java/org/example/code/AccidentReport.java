@@ -46,10 +46,10 @@ public class AccidentReport {
         System.out.println(report);
     }
 
-    public boolean confirmFault() {
-    // if(confirmFault()){return true;}
-
-    }
+//    public boolean confirmFault() {
+//    // if(confirmFault()){return true;}
+//    return flase;
+//    }
 
     public void enterDetails() {
 
