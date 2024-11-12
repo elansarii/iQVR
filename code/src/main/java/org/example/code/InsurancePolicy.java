@@ -16,6 +16,10 @@ public class InsurancePolicy {
     public InsurancePolicy() {
     }
 
+    public InsurancePolicy(String policyNumber) {
+        this.policyNumber = policyNumber;
+    }
+
     public boolean validateInsurancePolicy() {
         Date today = new Date();
         return !today.before(issueDate) && !today.after(expiryDate);
@@ -31,6 +35,8 @@ public class InsurancePolicy {
     }
 
     public void updateInsurancePolicy() {
-//        this.expiryDate = newExpiryDate;
+
     }
+
+
 }
