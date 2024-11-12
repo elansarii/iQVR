@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap');
+
+.label-title {
+    -fx-font-family: 'Alegreya Sans', sans-serif;
+    -fx-font-size: 20px;
+    -fx-text-fill: #efbf04; /* Gold color */
+}
+
+.label-subtitle {
+    -fx-font-family: 'Alegreya Sans', sans-serif;
+    -fx-font-size: 16px;
+    -fx-text-fill: #efbf04; /* Gold color */
+}
+
+.label {
+    -fx-font-family: 'Alegreya Sans', sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: #efbf04; /* Gold color */
+}
+
+.textfield {
+    -fx-background-color: linear-gradient(to bottom, #efefef, #eee);
+    -fx-background-radius: 4px;
+    -fx-border-color: #000;
+    -fx-border-width: .4px;
+    -fx-border-radius: 4px;
+    -fx-font-size: 13px;
+    -fx-font-family: 'Alegreya Sans', sans-serif;
+}
+.textfield:focused {
+    -fx-background-color: #fff;
+    -fx-border-color: linear-gradient(to bottom right, #0047aa, #008ad9);
+    -fx-border-width: .8px;
+}
+
+.combobox {
+    -fx-background-color: linear-gradient(to bottom, #efefef, #eee);
+    -fx-background-radius: 4px;
+    -fx-border-color: #000;
+    -fx-border-width: .4px;
+    -fx-border-radius: 4px;
+    -fx-font-size: 13px;
+    -fx-font-family: 'Alegreya Sans', sans-serif;
+}
+.combobox:focused {
+    -fx-background-color: #fff;
+    -fx-border-color: linear-gradient(to bottom right, #0047aa, #008ad9);
+    -fx-border-width: .8px;
+}
+
+.transfer-btn {
+    -fx-background-color: linear-gradient(to bottom, #efbf04, #a38d5a); /* Gold color */
+    -fx-background-radius: 5px;
+    -fx-text-fill: #fff;
+    -fx-font-size: 16px;
+    -fx-font-family: 'Alegreya Sans', sans-serif;
+    -fx-cursor: hand;
+}
+.transfer-btn:hover {
+    -fx-background-color: linear-gradient(to bottom, #efbf04, #ffefca); /* Gold color */
+}
+
+.close {
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-font-family: 'Alegreya Sans', sans-serif;
+}
+.close:hover {
+    -fx-background-color: #ff3547;
+}
+
+.left-pane {
+    -fx-background-color: #0047aa; /* Background color from login design */
+}

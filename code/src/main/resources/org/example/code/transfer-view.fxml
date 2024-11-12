@@ -1,14 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.geometry.Insets?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="org.example.code.TransferController"
-            prefHeight="400.0" prefWidth="600.0" >
-
-</AnchorPane>
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.code.TransferController" stylesheets="@transferDesign.css">
+    <children>
+        <AnchorPane prefHeight="400.0" prefWidth="600.0">
+            <children>
+                <AnchorPane prefHeight="400.0" prefWidth="300.0" layoutX="0.0" layoutY="0.0" styleClass="left-pane">
+                    <children>
+                        <Label layoutX="20.0" layoutY="20.0" text="VIN" styleClass="label" />
+                        <TextField layoutX="20.0" layoutY="50.0" prefWidth="260.0" styleClass="textfield" />
+                        <Label layoutX="20.0" layoutY="100.0" text="New owner name" styleClass="label" />
+                        <TextField layoutX="20.0" layoutY="130.0" prefWidth="260.0" styleClass="textfield" />
+                        <Label layoutX="20.0" layoutY="180.0" text="New owner QID" styleClass="label" />
+                        <TextField layoutX="20.0" layoutY="210.0" prefWidth="260.0" styleClass="textfield" />
+                        <Label layoutX="20.0" layoutY="260.0" text="New owner phone number" styleClass="label" />
+                        <TextField layoutX="20.0" layoutY="290.0" prefWidth="260.0" styleClass="textfield" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane layoutX="300.0" layoutY="0.0" prefHeight="400.0" prefWidth="300.0">
+                    <children>
+                        <Button layoutX="20.0" layoutY="50.0" mnemonicParsing="false" text="Confirm Transfer" prefWidth="260.0" styleClass="transfer-btn" />
+                        <Button layoutX="20.0" layoutY="100.0" mnemonicParsing="false" text="Cancel" prefWidth="260.0" styleClass="transfer-btn" />
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>
