@@ -34,4 +34,3 @@ Include a summary of the project and an overview of the milestones, design, and 
 - [Designing a javafx application](https://youtu.be/Aliw3lNRzfc?si=BnYgEL5zKFFszB-I) Used to gain inspiration for styling and  designing javafx.
 - [Google icons](https://fonts.google.com/icons) Used for icons to used in javafx.
 - [Sequence Diagram Tutorial – Complete Guide with Examples](https://creately.com/guides/sequence-diagram-tutorial/) To review the notation of the sequence diagram with some examples.
-- [Guard Condition in sequence diagram](https://forums.visual-paradigm.com/t/guard-condition-in-sequence-diagram/8491) Use it to know how can I display the guard condition in the alternative combined fragment.
