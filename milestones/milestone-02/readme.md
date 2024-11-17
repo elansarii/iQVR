@@ -35,3 +35,4 @@ Include a summary of the project and an overview of the milestones, design, and 
 - [Google icons](https://fonts.google.com/icons) Used for icons to used in javafx.
 - [Sequence Diagram Tutorial – Complete Guide with Examples](https://creately.com/guides/sequence-diagram-tutorial/) To review the notation of the sequence diagram with some examples.
 - [Working with Sequence Diagram](https://staruml.readthedocs.io/en/latest/modeling-with-uml/working-with-sequence-diagram.html#:~:text=UML%20Sequence%20Diagram.-,Lifeline,as%20the%20size%20of%20Lifeline.) Used StarUML documentation to know how to add a lifeline in StaruMUL.
+- [Sequence Diagrams – Unified Modeling Language (UML)](https://www.geeksforgeeks.org/unified-modeling-language-uml-sequence-diagrams/#11-actors) To get a better understanding about the difference between an actor and a lifeline in sequence diagram.
