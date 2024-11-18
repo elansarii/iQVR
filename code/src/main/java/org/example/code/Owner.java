@@ -8,6 +8,9 @@ public class Owner{
     private String address;
     private String qid;
     private String phoneNumber;
+    private ArrayList<Vehicle> ownedVehicles = new ArrayList<>();
+    private ArrayList<Invoice> bills = new ArrayList<>();
+    private static ArrayList<Owner> owners = new ArrayList<>();
     public Owner(String name, String address, String qid, String phoneNumber) {
         this.name = name;
         this.address = address;

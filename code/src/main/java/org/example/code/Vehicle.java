@@ -15,6 +15,7 @@ public class Vehicle {
     private Owner prevOwner;
     private InsurancePolicy insurancePolicy;
     private FitnessCertificate fitnessCertificate;
+    private static ArrayList<Vehicle> vehicles = new ArrayList<>();
 
     public Vehicle() {
     }
@@ -75,15 +76,15 @@ public class Vehicle {
         this.owner = newOwner;
     }
 
-//    public void setPrevOwner(Owner currentOwner) {
-//        this.prevOwner = currentOwner;
-//    }
-//    public Vehicle findVehicleByVin( String vin) {
-//        for (Vehicle vehicle : vehicles) {
-//            if (vehicle.getVin().equals(vin)) {
-//                return vehicle;
-//            }
-//        }
-//        return null;
-//    }
+    public void setPrevOwner(Owner currentOwner) {
+        this.prevOwner = currentOwner;
+    }
+    public Vehicle findVehicleByVin( String vin) {
+        for (Vehicle vehicle : vehicles) {
+            if (vehicle.getVin().equals(vin)) {
+                return vehicle;
+            }
+        }
+        return null;
+    }
 }
