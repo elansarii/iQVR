@@ -1,0 +1,9 @@
+ID,Amount,Date,Payment Status,Description
+1000,150.0,8/12/2024,not paid,transfer fee
+2000,100.0,3/12/2024,paid,registration fee
+3000,120.0,10/12/2024,not paid,speeding violation
+4000,200.0,15/11/2024,paid,insurance
+1000,150.0,8/12/2024,not paid,parking fee
+2000,100.0,3/12/2024,paid,transfer fee
+3000,120.0,10/12/2024,not paid,speeding violation
+4000,200.0,15/11/2024,paid,fitness check

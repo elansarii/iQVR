@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
@@ -42,15 +43,32 @@ public class TransferController {
 
     @FXML
     private void checkBills() {
-        // Check if the current owner has any outstanding bills
         String currentOwnerQid = currentOwnerQidField.getText();
-        // Add logic to check bills
-        System.out.println("Checking bills for QID: " + currentOwnerQid);
+        boolean hasOutstandingBills = checkOutstandingBills(currentOwnerQid);
+
+        if (hasOutstandingBills) {
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setTitle("Outstanding Bills");
+            alert.setHeaderText(null);
+            alert.setContentText("You have outstanding bills. Please pay them before proceeding.");
+            alert.showAndWait();
+
+            // Terminate the session
+            Stage stage = (Stage) checkBillsButton.getScene().getWindow();
+            stage.close();
+        } else {
+            System.out.println("No outstanding bills for QID: " + currentOwnerQid);
+        }
+    }
+
+    private boolean checkOutstandingBills(String qid) {
+        // Add logic to check if there are outstanding bills for the given QID
+        // This is a placeholder implementation
+        return true; // Assume there are outstanding bills for demonstration purposes
     }
 
     @FXML
     private void handleConfirmTransfer() {
-        // Handle the confirm transfer action
         String currentOwnerQid = currentOwnerQidField.getText();
         String currentOwnerName = currentOwnerNameField.getText();
         String currentOwnerVin = currentOwnerVinField.getText();
@@ -58,7 +76,6 @@ public class TransferController {
         String newOwnerQid = newOwnerQidField.getText();
         String newOwnerPhone = newOwnerPhoneField.getText();
 
-        // Add your transfer logic here
         System.out.println("Transfer confirmed from " + currentOwnerName + " to " + newOwnerName);
     }
 
