@@ -1,0 +1,9 @@
+VIN,Make,Model,Year,Registration Status,Owner,Previous Owner,Insurance Policy,Fitness Certificate
+1HGCM82633A123456,Toyota,Corolla,2005,Registered,4000,2000,Active,Valid
+5YJ3E1EA7LF678901,Tesla,Model 3,2020,Registered,1000,None,Active,Valid
+5YJ3E1EA7LF678901,Lexus,LFA,2010,Registered,1000,5000,Active,Valid
+1FTFW1E51JK123456,Jeep,Wrangler,2019,Not Registered,3000,5000,Expired,Expired
+WBA3A5C58FF678901,Porsche,GT3RS,2024,Registered,1000,None,Active,Valid
+1C4RJEBG8FC678901,Jeep,Grand Cherokee,2016,Not Registered,2000,3000,Expired,Expired
+3VW4T7AU4FM678901,Volkswagen,Passat,2015,Not Registered,3000,4000,Expired,Expired
+4T1BF1FK8GU678901,Toyota,Camry,2018,Registered,4000,1000,Active,Valid

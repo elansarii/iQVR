@@ -1,6 +1,5 @@
 package org.example.code;
 
-import java.io.Serializable;
 import java.util.*;
 
 public class Owner{
@@ -9,16 +8,11 @@ public class Owner{
     private String address;
     private String qid;
     private String phoneNumber;
-    private ArrayList<Vehicle> ownedVehicles;
-    private ArrayList<Owner> owners;
-    private ArrayList<Invoice> bills;
-
-    public Owner(String name, String address, String qid, String phoneNumber, List<Vehicle> ownedVehicles) {
+    public Owner(String name, String address, String qid, String phoneNumber) {
         this.name = name;
         this.address = address;
         this.qid = qid;
         this.phoneNumber = phoneNumber;
-        this.ownedVehicles = new ArrayList<>(ownedVehicles);
     }
 
 
