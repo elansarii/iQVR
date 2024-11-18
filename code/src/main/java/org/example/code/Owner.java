@@ -1,8 +1,9 @@
 package org.example.code;
 
+import java.io.Serializable;
 import java.util.*;
 
-public class Owner {
+public class Owner{
 
     private String name;
     private String address;

@@ -1,8 +1,14 @@
 package org.example.code;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class TransferController {
 
@@ -57,7 +63,15 @@ public class TransferController {
 
     @FXML
     private void handleCancel() {
-        // Handle the cancel action
-        System.out.println("Transfer cancelled");
+        // Handle the cancel action and return to the choice view
+        try {
+            Parent choiceView = FXMLLoader.load(getClass().getResource("/path/to/choice-view.fxml"));
+            Scene choiceScene = new Scene(choiceView);
+            Stage window = (Stage) cancelButton.getScene().getWindow();
+            window.setScene(choiceScene);
+            window.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
