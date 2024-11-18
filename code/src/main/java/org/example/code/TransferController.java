@@ -9,6 +9,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Objects;
 
 public class TransferController {
 
@@ -63,9 +64,8 @@ public class TransferController {
 
     @FXML
     private void handleCancel() {
-        // Handle the cancel action and return to the choice view
         try {
-            Parent choiceView = FXMLLoader.load(getClass().getResource("/path/to/choice-view.fxml"));
+            Parent choiceView = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/org/example/code/choice-view.fxml")));
             Scene choiceScene = new Scene(choiceView);
             Stage window = (Stage) cancelButton.getScene().getWindow();
             window.setScene(choiceScene);
