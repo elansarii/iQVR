@@ -5,28 +5,34 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.StackPane?>
-<?import javafx.geometry.Insets?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.code.TransferController" stylesheets="@transferDesign.css">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.code.TransferController">
     <children>
-        <AnchorPane prefHeight="400.0" prefWidth="600.0">
+        <AnchorPane fx:id="main_form" prefHeight="200.0" prefWidth="200.0">
             <children>
-                <AnchorPane prefHeight="400.0" prefWidth="300.0" layoutX="0.0" layoutY="0.0" styleClass="left-pane">
-                    <children>
-                        <Label layoutX="20.0" layoutY="20.0" text="VIN" styleClass="label" />
-                        <TextField layoutX="20.0" layoutY="50.0" prefWidth="260.0" styleClass="textfield" />
-                        <Label layoutX="20.0" layoutY="100.0" text="New owner name" styleClass="label" />
-                        <TextField layoutX="20.0" layoutY="130.0" prefWidth="260.0" styleClass="textfield" />
-                        <Label layoutX="20.0" layoutY="180.0" text="New owner QID" styleClass="label" />
-                        <TextField layoutX="20.0" layoutY="210.0" prefWidth="260.0" styleClass="textfield" />
-                        <Label layoutX="20.0" layoutY="260.0" text="New owner phone number" styleClass="label" />
-                        <TextField layoutX="20.0" layoutY="290.0" prefWidth="260.0" styleClass="textfield" />
-                    </children>
+                <AnchorPane prefHeight="400.0" prefWidth="300.0" styleClass="left-form" stylesheets="@transferDesign.css">
+               <children>
+                  <Label layoutX="118.0" layoutY="32.0" text="Name" />
+                  <Label layoutX="123.0" layoutY="57.0" text="QID" />
+                  <Label layoutX="124.0" layoutY="95.0" text="VIN" />
+                  <Label layoutX="14.0" layoutY="14.0" text="Current Owner details" />
+                  <Label layoutX="14.0" layoutY="144.0" text="New Owner details" />
+                  <Label layoutX="128.0" layoutY="161.0" text="Name" />
+                  <Label layoutX="140.0" layoutY="200.0" text="QID" />
+                  <Label layoutX="112.0" layoutY="237.0" text="Phone number" />
+               </children>
                 </AnchorPane>
-                <AnchorPane layoutX="300.0" layoutY="0.0" prefHeight="400.0" prefWidth="300.0">
+                <AnchorPane layoutX="300.0" prefHeight="400.0" prefWidth="300.0" styleClass="right-form" stylesheets="@transferDesign.css">
                     <children>
-                        <Button layoutX="20.0" layoutY="50.0" mnemonicParsing="false" text="Confirm Transfer" prefWidth="260.0" styleClass="transfer-btn" />
-                        <Button layoutX="20.0" layoutY="100.0" mnemonicParsing="false" text="Cancel" prefWidth="260.0" styleClass="transfer-btn" />
+                        <TextField fx:id="name" layoutX="40.0" layoutY="14.0" onAction="#loginUser" prefHeight="30.0" prefWidth="220.0" promptText="Name" styleClass="textfield" stylesheets="@transferDesign.css" />
+                        <TextField fx:id="qid" layoutX="40.0" layoutY="55.0" onAction="#loginUser" prefHeight="30.0" prefWidth="220.0" promptText="QID" styleClass="textfield" stylesheets="@transferDesign.css" />
+                        <Button fx:id="loginBtn" layoutX="40.0" layoutY="328.0" mnemonicParsing="false" onAction="#loginUser" prefHeight="40.0" prefWidth="220.0" styleClass="login-btn" stylesheets="@transferDesign.css" text="Confirm transfer" />
+                        <Button fx:id="close" layoutX="248.0" layoutY="14.0" mnemonicParsing="false" onAction="#close" prefHeight="24.0" prefWidth="58.0" styleClass="close" stylesheets="@transferDesign.css" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0" />
+                  <TextField fx:id="qid1" layoutX="40.0" layoutY="95.0" onAction="#loginUser" prefHeight="30.0" prefWidth="220.0" promptText="VIN" styleClass="textfield" stylesheets="@transferDesign.css" />
+                  <TextField fx:id="name1" layoutX="40.0" layoutY="179.0" onAction="#loginUser" prefHeight="30.0" prefWidth="220.0" promptText="Name" styleClass="textfield" stylesheets="@transferDesign.css" />
+                  <TextField fx:id="name2" layoutX="40.0" layoutY="218.0" onAction="#loginUser" prefHeight="30.0" prefWidth="220.0" promptText="Name" styleClass="textfield" stylesheets="@transferDesign.css" />
+                  <TextField fx:id="name3" layoutX="40.0" layoutY="255.0" onAction="#loginUser" prefHeight="30.0" prefWidth="220.0" promptText="Name" styleClass="textfield" stylesheets="@transferDesign.css" />
+                  <Button fx:id="loginBtn1" layoutX="40.0" layoutY="133.0" mnemonicParsing="false" onAction="#loginUser" prefHeight="40.0" prefWidth="220.0" styleClass="login-btn" stylesheets="@transferDesign.css" text="Confirm owner details" />
                     </children>
                 </AnchorPane>
             </children>

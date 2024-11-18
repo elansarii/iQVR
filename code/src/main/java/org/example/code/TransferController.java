@@ -31,8 +31,9 @@ public class TransferController {
     private Button cancelButton;
 
     @FXML
-    private void initialize() {
-        // Initialization code, if needed
+    private void checkBills(){
+        // Check if the current owner has any outstanding bills
+
     }
 
     @FXML
@@ -46,7 +47,7 @@ public class TransferController {
         String newOwnerPhone = newOwnerPhoneField.getText();
 
         // Add your transfer logic here
-        System.out.println("Transfer confirmed from " + currentOwnerName + " to " + newOwnerName);
+       // System.out.println("Transfer confirmed from " + currentOwnerName + " to " + newOwnerName);
     }
 
     @FXML
