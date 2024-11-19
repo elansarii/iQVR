@@ -9,7 +9,6 @@ public class Invoice {
     private final double amount;
     private final LocalDate dueDate;
     private final LocalDate issueDate;
-    //private final String vehicleVin;
     private final String ownerQid;
     private String paymentStatus;
     private final String description;
@@ -20,9 +19,19 @@ public class Invoice {
         this.amount = amount;
         this.issueDate = LocalDate.now();
         this.dueDate = this.issueDate.plusDays(30);
-        //this.vehicleVin = vehicleVin;
         this.ownerQid = ownerQid;
         this.paymentStatus = "unpaid";
+        this.description = description;
+    }
+
+    public Invoice(String invoiceId, double amount, LocalDate dueDate, LocalDate issueDate,
+                   String ownerQid, String paymentStatus, String description) {
+        this.invoiceId = invoiceId;
+        this.amount = amount;
+        this.dueDate = dueDate;
+        this.issueDate = issueDate;
+        this.ownerQid = ownerQid;
+        this.paymentStatus = paymentStatus;
         this.description = description;
     }
 
