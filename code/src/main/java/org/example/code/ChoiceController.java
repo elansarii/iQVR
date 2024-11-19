@@ -25,13 +25,14 @@ public class ChoiceController {
 
     public void reportAccident(ActionEvent actionEvent) {
         try {
-            Parent reportView = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/org/example/code/report-accident-view.fxml")));
+            Parent reportView = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/org/example/code/accident-view.fxml")));
             Scene reportScene = new Scene(reportView);
             Stage window = (Stage) ((javafx.scene.Node) actionEvent.getSource()).getScene().getWindow();
             window.setScene(reportScene);
             window.show();
         } catch (IOException e) {
             e.printStackTrace();
+            System.out.println("Error loading accident-view.fxml");
         }
     }
 }
