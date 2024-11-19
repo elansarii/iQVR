@@ -64,20 +64,28 @@ public class DataLoader {
 
 
         // Since the date format is ISO (yyyy-MM-dd), we can parse it directly
+
         Invoice i1 = new Invoice("0001", 150.0, LocalDate.parse("2024-07-12"),
-                LocalDate.parse("2024-08-12"), "1000", "not paid", "transfer fee");
+                LocalDate.parse("2024-08-12"), "1000", "unpaid", "transfer fee");
+
         Invoice i2 = new Invoice("0002", 100.0, LocalDate.parse("2024-02-12"),
                 LocalDate.parse("2024-03-12"), "2000", "paid", "registration fee");
+
         Invoice i3 = new Invoice("0003", 120.0, LocalDate.parse("2024-09-12"),
-                LocalDate.parse("2024-10-12"), "3000", "not paid", "speeding violation");
+                LocalDate.parse("2024-10-12"), "3000", "unpaid", "speeding violation");
+
         Invoice i4 = new Invoice("0004", 200.0, LocalDate.parse("2024-10-15"),
                 LocalDate.parse("2024-11-15"), "4000", "paid", "insurance");
+
         Invoice i5 = new Invoice("0005", 150.0, LocalDate.parse("2024-07-12"),
-                LocalDate.parse("2024-08-12"), "1000", "not paid", "parking fee");
+                LocalDate.parse("2024-08-12"), "1000", "unpaid", "parking fee");
+
         Invoice i6 = new Invoice("0006", 100.0, LocalDate.parse("2024-02-12"),
                 LocalDate.parse("2024-03-12"),"2000", "paid", "transfer fee");
+
         Invoice i7 = new Invoice("0007", 120.0, LocalDate.parse("2024-09-12"),
-                LocalDate.parse("2024-10-12"), "3000", "not paid", "speeding violation");
+                LocalDate.parse("2024-10-12"), "3000", "unpaid", "speeding violation");
+
         Invoice i8 = new Invoice("0008", 200.0, LocalDate.parse("2024-10-15"),
                 LocalDate.parse("2024-11-15"), "4000", "paid", "fitness check");
 
