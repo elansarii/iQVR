@@ -12,6 +12,8 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.Objects;
 
+import static java.lang.System.exit;
+
 public class TransferController {
 
     @FXML
@@ -42,41 +44,50 @@ public class TransferController {
     private Button checkBillsButton;
 
     @FXML
-    private void checkBills() {
-        String currentOwnerQid = currentOwnerQidField.getText();
-        boolean hasOutstandingBills = checkOutstandingBills(currentOwnerQid);
-
-        if (hasOutstandingBills) {
-            Alert alert = new Alert(Alert.AlertType.WARNING);
-            alert.setTitle("Outstanding Bills");
-            alert.setHeaderText(null);
-            alert.setContentText("You have outstanding bills. Please pay them before proceeding.");
-            alert.showAndWait();
-
-            // Terminate the session
-            Stage stage = (Stage) checkBillsButton.getScene().getWindow();
-            stage.close();
-        } else {
-            System.out.println("No outstanding bills for QID: " + currentOwnerQid);
+    private void handleCheckBills() {
+        Owner owner;
+        String currentOwnerQid= currentOwnerQidField.getText();
+        for(Owner o: iQVR.owners){
+            if(o.getQid().equals(currentOwnerQid)){
+                owner=o;
+                boolean result=owner.findOutstandingBills(owner.getQid());
+                if(!result){
+                    Alert alert = new Alert(Alert.AlertType.ERROR);
+                    alert.setTitle("Error");
+                    alert.setHeaderText("Unpaid Bills");
+                    alert.setContentText("You have unpaid bills");
+                    alert.showAndWait();
+                    exit(0);
+                }
+            }
         }
-    }
-
-    private boolean checkOutstandingBills(String qid) {
-        // Add logic to check if there are outstanding bills for the given QID
-        // This is a placeholder implementation
-        return true; // Assume there are outstanding bills for demonstration purposes
     }
 
     @FXML
     private void handleConfirmTransfer() {
-        String currentOwnerQid = currentOwnerQidField.getText();
-        String currentOwnerName = currentOwnerNameField.getText();
-        String currentOwnerVin = currentOwnerVinField.getText();
-        String newOwnerName = newOwnerNameField.getText();
-        String newOwnerQid = newOwnerQidField.getText();
-        String newOwnerPhone = newOwnerPhoneField.getText();
+        Owner currentOwner= findOwner(currentOwnerQidField.getText());
+        Owner newOwner=findOwner(newOwnerQidField.getText());
+        String vin = currentOwnerVinField.getText();
+        if(currentOwner==null || newOwner==null){
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Invalid Owner");
+            alert.setContentText("Owner information not correct");
+            alert.showAndWait();
+            return;
+        }
 
-        System.out.println("Transfer confirmed from " + currentOwnerName + " to " + newOwnerName);
+        currentOwner.transferOwner(newOwner,vin);
+
+    }
+
+    private Owner findOwner(String qid){
+        for(Owner o: iQVR.owners){
+            if(o.getQid().equals(qid)){
+                return o;
+            }
+        }
+        return null;
     }
 
     @FXML

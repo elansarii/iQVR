@@ -22,11 +22,11 @@ public class iQVR extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("login-view.fxml")));
         owners= DataLoader.loadOwners();
         vehicles= DataLoader.loadVehicles();
         bills= DataLoader.loadInvoices();
 
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("login-view.fxml")));
 
         Scene scene = new Scene(root);
 

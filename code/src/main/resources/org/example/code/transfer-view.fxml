@@ -19,7 +19,7 @@
                         <TextField fx:id="currentOwnerQidField" layoutX="20.0" layoutY="140.0" prefWidth="260.0" styleClass="textfield" />
                         <Label layoutX="20.0" layoutY="180.0" text="VIN" styleClass="label" />
                         <TextField fx:id="currentOwnerVinField" layoutX="20.0" layoutY="200.0" prefWidth="260.0" styleClass="textfield" />
-                        <Button fx:id="checkBillsButton" layoutX="20.0" layoutY="260.0" mnemonicParsing="false" onAction="#checkBills" prefHeight="40.0" prefWidth="260.0" styleClass="login-btn" text="Check Bills" />
+                        <Button fx:id="checkBillsButton" layoutX="20.0" layoutY="260.0" mnemonicParsing="false" onAction="#handleCheckBills" prefHeight="40.0" prefWidth="260.0" styleClass="login-btn" text="Check Bills" />
                     </children>
                 </AnchorPane>
                 <AnchorPane layoutX="300.0" prefHeight="400.0" prefWidth="300.0" styleClass="right-form">
