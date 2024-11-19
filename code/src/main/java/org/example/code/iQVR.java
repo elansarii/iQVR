@@ -25,7 +25,7 @@ public class iQVR extends Application {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("login-view.fxml")));
         owners= DataLoader.loadOwners();
         vehicles= DataLoader.loadVehicles();
-        bills= DataLoader.loadBills();
+        bills= DataLoader.loadInvoices();
 
 
         Scene scene = new Scene(root);
