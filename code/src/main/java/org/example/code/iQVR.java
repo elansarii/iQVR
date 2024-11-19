@@ -8,9 +8,14 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
+import java.util.ArrayList;
 import java.util.Objects;
 
+
 public class iQVR extends Application {
+    public static ArrayList<Owner> owners = new ArrayList<>();
+    public static ArrayList<Vehicle> vehicles = new ArrayList<>();
+    public static ArrayList<Invoice> bills = new ArrayList<>();
 
     private double x = 0;
     private double y = 0;
@@ -18,6 +23,10 @@ public class iQVR extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("login-view.fxml")));
+        owners= DataLoader.loadOwners();
+        vehicles= DataLoader.loadVehicles();
+        bills= DataLoader.loadBills();
+
 
         Scene scene = new Scene(root);
 

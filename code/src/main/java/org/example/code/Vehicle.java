@@ -9,15 +9,22 @@ public class Vehicle {
     private String make;
     private String model;
     private int year;
-    private Registration registration;
     private boolean isRegistered;
     private Owner owner;
     private Owner prevOwner;
-    private InsurancePolicy insurancePolicy;
-    private FitnessCertificate fitnessCertificate;
-    private static ArrayList<Vehicle> vehicles = new ArrayList<>();
+    private boolean insurancePolicy;
+    private boolean fitnessCertificate;
 
-    public Vehicle() {
+    public Vehicle(String vin, String make, String model, int year, boolean isRegistered, Owner owner, Owner prevOwner, boolean insurancePolicy, boolean fitnessCertificate) {
+        this.vin = vin;
+        this.make = make;
+        this.model = model;
+        this.year = year;
+        this.isRegistered = isRegistered;
+        this.owner = owner;
+        this.prevOwner = prevOwner;
+        this.insurancePolicy = insurancePolicy;
+        this.fitnessCertificate = fitnessCertificate;
     }
 
     public void vehicleDetails() {
@@ -48,10 +55,6 @@ public class Vehicle {
         return year;
     }
 
-    public Registration getRegNumber() {
-        return registration;
-    }
-
     public boolean isRegistered() {
         return isRegistered;
     }
@@ -64,11 +67,11 @@ public class Vehicle {
         return prevOwner;
     }
 
-    public InsurancePolicy getInsurancePolicyNum() {
+    public boolean getInsurancePolicyNum() {
         return insurancePolicy;
     }
 
-    public FitnessCertificate getFitnessCertNum() {
+    public boolean getFitnessCertNum() {
         return fitnessCertificate;
     }
 
@@ -80,7 +83,7 @@ public class Vehicle {
         this.prevOwner = currentOwner;
     }
     public Vehicle findVehicleByVin( String vin) {
-        for (Vehicle vehicle : vehicles) {
+        for (Vehicle vehicle : iQVR.vehicles) {
             if (vehicle.getVin().equals(vin)) {
                 return vehicle;
             }
