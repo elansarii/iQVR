@@ -26,9 +26,9 @@ public class Vehicle {
         this.insurancePolicy = insurancePolicy;
         this.fitnessCertificate = fitnessCertificate;
     }
-
     public void vehicleDetails() {
-        // TODO implement here
+        System.out.printf("VIN: %s%nMake: %s%nModel: %s%nYear: %d%nRegistered: %b%nOwner: %s%nPrevious Owner: %s%nInsurance Policy: %b%nFitness Certificate: %b%n",
+                vin, make, model, year, isRegistered, owner.getName(), prevOwner != null ? prevOwner.getName() : "None", insurancePolicy, fitnessCertificate);
     }
 
     public void validateDetails() {

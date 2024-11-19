@@ -16,7 +16,6 @@ public class Owner {
         this.phoneNumber = phoneNumber;
     }
 
-
     public void ownerDetails(Owner owner) {
 
         System.out.printf("Name: %s%nQID: %s%nPhone number: %s%nAddress: %s%n",
@@ -53,6 +52,8 @@ public class Owner {
         iQVR.bills.add(bill);
         bill.generateInvoiceReport(bill.getInvoiceId(), bill.getAmount(), bill.getDueDate(),
                 bill.getIssueDate(), bill.getOwnerQid(), bill.getPaymentStatus(), bill.getDescription());
+
+        vehicle.vehicleDetails();
         return true;
     }
 
