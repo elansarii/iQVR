@@ -5,6 +5,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
 
 <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@accidentDesign.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.code.AccidentController">
    <children>
@@ -12,24 +13,27 @@
          <children>
             <AnchorPane prefHeight="400.0" prefWidth="300.0" styleClass="left-form">
                <children>
-                  <Label layoutX="20.0" layoutY="20.0" styleClass="label-title" text="Vehicles Details" />
-                  <Label layoutX="20.0" layoutY="60.0" styleClass="label" text="VIN Of The Responsible Vehicle" />
-                  <TextField fx:id="currentOwnerNameField" layoutX="20.0" layoutY="80.0" prefWidth="260.0" styleClass="textfield" />
-                  <Label layoutX="20.0" layoutY="152.0" styleClass="label" text="VIN Of The Victim Vehicle" />
-                  <TextField fx:id="currentOwnerQidField" layoutX="20.0" layoutY="173.0" prefWidth="260.0" styleClass="textfield" />
-                  <Button fx:id="checkBillsButton" layoutX="20.0" layoutY="260.0" mnemonicParsing="false" onAction="#checkBills" prefHeight="40.0" prefWidth="260.0" styleClass="login-btn" text="Check Bills" />
+                  <Label layoutX="20.0" layoutY="20.0" prefHeight="40.0" prefWidth="260.0" text="Report Accident" styleClass="label-title">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="80.0" styleClass="label-title" text="Vehicles Details" />
+                  <Label layoutX="20.0" layoutY="130.0" styleClass="label" text="VIN Of The Responsible Vehicle" />
+                  <TextField fx:id="responsibleVehicleVINField" layoutX="20.0" layoutY="150.0" prefWidth="260.0" styleClass="textfield" />
+                  <Label layoutX="20.0" layoutY="190.0" styleClass="label" text="VIN Of The Victim Vehicle" />
+                  <TextField fx:id="victimVehicleVINField" layoutX="20.0" layoutY="210.0" prefWidth="260.0" styleClass="textfield" />
                </children>
             </AnchorPane>
             <AnchorPane layoutX="300.0" prefHeight="400.0" prefWidth="300.0" styleClass="right-form">
                <children>
-                  <Label layoutX="20.0" layoutY="20.0" styleClass="label-title" text="Accident details" />
-                  <Label layoutX="20.0" layoutY="60.0" styleClass="label" text="Location" />
-                  <TextField fx:id="newOwnerNameField" layoutX="20.0" layoutY="80.0" prefWidth="260.0" styleClass="textfield" />
-                  <Label layoutX="20.0" layoutY="120.0" styleClass="label" text="Description" />
-                  <TextField fx:id="newOwnerQidField" layoutX="20.0" layoutY="140.0" prefHeight="105.0" prefWidth="260.0" styleClass="textfield" />
-                  <Label layoutX="20.0" layoutY="180.0" styleClass="label" />
-                  <Button fx:id="confirmButton" layoutX="20.0" layoutY="260.0" mnemonicParsing="false" onAction="#handleConfirmTransfer" prefHeight="40.0" prefWidth="260.0" styleClass="login-btn" text="Confirm " />
-                  <Button fx:id="cancelButton" layoutX="20.0" layoutY="310.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="40.0" prefWidth="260.0" styleClass="login-btn" text="Cancel" />
+                  <Label layoutX="20.0" layoutY="20.0" styleClass="label-title" text="Accident Details" />
+                  <Label layoutX="20.0" layoutY="70.0" styleClass="label" text="Location" />
+                  <TextField fx:id="locationField" layoutX="20.0" layoutY="90.0" prefWidth="260.0" styleClass="textfield" />
+                  <Label layoutX="20.0" layoutY="130.0" styleClass="label" text="Description" />
+                  <TextField fx:id="descriptionField" layoutX="20.0" layoutY="150.0" prefHeight="105.0" prefWidth="260.0" styleClass="textfield" />
+                  <Button fx:id="confirmButton" layoutX="20.0" layoutY="270.0" mnemonicParsing="false" onAction="#handleConfirmTransfer" prefHeight="40.0" prefWidth="260.0" styleClass="login-btn" text="Confirm" />
+                  <Button fx:id="cancelButton" layoutX="20.0" layoutY="320.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="40.0" prefWidth="260.0" styleClass="login-btn" text="Cancel" />
                </children>
             </AnchorPane>
          </children>
