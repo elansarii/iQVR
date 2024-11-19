@@ -1,5 +1,8 @@
 package org.example.code;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.*;
 import java.time.LocalDate;
 
@@ -38,10 +41,35 @@ public class Invoice {
     private String generateInvoiceId() {
         return UUID.randomUUID().toString();
     }
-    public Invoice generateInvoice() {
-
-        System.out.println("Invoice generated with ID: " + getInvoiceId());
-        return this;
+    public void generateInvoiceReport(String invoiceId, double amount, LocalDate dueDate, LocalDate issueDate,
+                                             String ownerQid, String paymentStatus, String description) {
+        String fileName = "Invoice_" + invoiceId + ".txt";
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
+            writer.write("Invoice Report");
+            writer.newLine();
+            writer.write("==============");
+            writer.newLine();
+            writer.newLine();
+            writer.write("Invoice ID      : " + invoiceId);
+            writer.newLine();
+            writer.write("Amount          : $" + String.format("%.2f", amount));
+            writer.newLine();
+            writer.write("Issue Date      : " + issueDate.toString());
+            writer.newLine();
+            writer.write("Due Date        : " + dueDate.toString());
+            writer.newLine();
+            writer.write("Owner QID       : " + ownerQid);
+            writer.newLine();
+            writer.write("Payment Status  : " + paymentStatus);
+            writer.newLine();
+            writer.write("Description     : " + description);
+            writer.newLine();
+            writer.write("==============");
+            writer.newLine();
+            writer.write("End of Report");
+        } catch (IOException e) {
+            System.err.println("Error writing invoice report: " + e.getMessage());
+        }
     }
 
 //    public void sendInvoice() {

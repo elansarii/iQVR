@@ -7,6 +7,7 @@ import java.time.LocalTime;
 import java.util.*;
 
 public class AccidentReport {
+    private int counter=0000;
     private Vehicle ownerv;
     private String reportId;
     private String ownerVin;
@@ -15,8 +16,6 @@ public class AccidentReport {
     private LocalTime time;
     private String location;
     private String description;
-    private boolean confirmationStatus;
-
 
     public AccidentReport(String description, Vehicle ownerv, LocalTime time,
                           String reportId, String ownerVin, String victimVin, String location) {
@@ -44,15 +43,6 @@ public class AccidentReport {
                 reportId, date, time, location, description, ownerv, ownerVin, victimVin
         );
         System.out.println(report);
-    }
-
-//    public boolean confirmFault() {
-//    // if(confirmFault()){return true;}
-//    return flase;
-//    }
-
-    public void enterDetails() {
-
     }
 
     public void retrieveReport() {
