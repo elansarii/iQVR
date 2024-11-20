@@ -1,14 +1,14 @@
 package org.example.code;
 
-import java.io.*;
-import java.sql.Time;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.*;
 
 public class AccidentReport {
     private int counter=0000;
-    private Vehicle ownerv;
     private String reportId;
     private String ownerVin;
     private String victimVin;
@@ -17,32 +17,55 @@ public class AccidentReport {
     private String location;
     private String description;
 
-    public AccidentReport(String description, Vehicle ownerv, LocalTime time,
-                          String reportId, String ownerVin, String victimVin, String location) {
+    public AccidentReport(String description, String ownerVin,
+                          String victimVin, String location) {
+        this.reportId = generateReportId();
         this.date = LocalDate.now();
+        this.time = LocalTime.now();
         this.description = description;
-        this.ownerv = ownerv;
-        this.time = time;
-        this.reportId = reportId;
         this.ownerVin = ownerVin;
         this.victimVin = victimVin;
         this.location = location;
     }
-    public void reportAccident(){
-        Vehicle offending = ownerv.findVehicleByVin(ownerVin);
-        Vehicle victim = ownerv.findVehicleByVin(victimVin);
-        date= LocalDate.now();
 
 
+
+
+    private String generateReportId() {
+        return UUID.randomUUID().toString();
     }
 
-    public void generateReport() {
-
-        String report = String.format(
-                "Accident Report ID: %s\nDate: %s\nTime: %s\nLocation: %s\nDescription: %s\nOwner Vehicle: %s\nOwner VIN: %s\nVictim VIN: %s",
-                reportId, date, time, location, description, ownerv, ownerVin, victimVin
-        );
-        System.out.println(report);
+    public void generateAccidentReport(String reportId, LocalDate date, LocalTime time, String location,
+                                       String description, String ownerVehicle, String ownerVin, String victimVin) {
+        String fileName = "AccidentReport_" + reportId + ".txt";
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
+            writer.write("Accident Report");
+            writer.newLine();
+            writer.write("================");
+            writer.newLine();
+            writer.newLine();
+            writer.write("Report ID       : " + reportId);
+            writer.newLine();
+            writer.write("Date            : " + date.toString());
+            writer.newLine();
+            writer.write("Time            : " + time.toString());
+            writer.newLine();
+            writer.write("Location        : " + location);
+            writer.newLine();
+            writer.write("Description     : " + description);
+            writer.newLine();
+            writer.write("Owner Vehicle   : " + ownerVehicle);
+            writer.newLine();
+            writer.write("Owner VIN       : " + ownerVin);
+            writer.newLine();
+            writer.write("Victim VIN      : " + victimVin);
+            writer.newLine();
+            writer.write("================");
+            writer.newLine();
+            writer.write("End of Report");
+        } catch (IOException e) {
+            System.err.println("Error writing accident report: " + e.getMessage());
+        }
     }
 
     public void retrieveReport() {
@@ -52,4 +75,34 @@ public class AccidentReport {
     public void sendReportToInsurance() {
 
     }
+
+
+    public String getReportId() {
+        return reportId;
+    }
+
+    public String getOwnerVin() {
+        return ownerVin;
+    }
+
+    public String getVictimVin() {
+        return victimVin;
+    }
+
+    public LocalDate getDate() {
+        return date;
+    }
+
+    public LocalTime getTime() {
+        return time;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
 }
