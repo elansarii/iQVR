@@ -41,10 +41,8 @@ public class TransferController {
     @FXML
     private Button checkBillsButton;
 
-    // Add a boolean flag to track if bills have been checked
     private boolean billsChecked = false;
 
-    // Initialize method to disable the Confirm button initially
     @FXML
     public void initialize() {
         confirmButton.setDisable(true);
@@ -54,7 +52,6 @@ public class TransferController {
     private void handleCheckBills() {
         String currentOwnerQid = currentOwnerQidField.getText();
 
-        // Find the current owner based on QID
         Owner owner = findOwner(currentOwnerQid);
         if (owner == null) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
@@ -67,7 +64,6 @@ public class TransferController {
 
         boolean billsArePaid = owner.findOutstandingBills(owner.getQid());
         if (!billsArePaid) {
-            // Owner has unpaid bills
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");
             alert.setHeaderText("Unpaid Bills");
@@ -76,7 +72,6 @@ public class TransferController {
             return;
         }
 
-        // Bills are checked and there are no unpaid bills
         billsChecked = true;
         confirmButton.setDisable(false); // Enable the Confirm Transfer button
 
@@ -89,7 +84,6 @@ public class TransferController {
 
     @FXML
     private void handleConfirmTransfer() {
-        // Check if bills have been checked before proceeding
         if (!billsChecked) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");
@@ -112,10 +106,8 @@ public class TransferController {
             return;
         }
 
-        // Proceed with the transfer
         currentOwner.transferOwner(newOwner, vin);
 
-        // Optional: Reset the billsChecked flag and disable the Confirm button after transfer
         billsChecked = false;
         confirmButton.setDisable(true);
     }

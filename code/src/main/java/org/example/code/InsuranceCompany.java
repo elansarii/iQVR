@@ -17,11 +17,8 @@ public class InsuranceCompany {
     public InsuranceCompany() {
     }
 
-    public void purchaseInsurancePolicy(InsurancePolicy policy) {
-        // TODO implement here
-    }
 
-    public void listInsurancePolicies() {
+    public void acknowledgeAccident(AccidentReport accident) {
         // TODO implement here
     }
 }
