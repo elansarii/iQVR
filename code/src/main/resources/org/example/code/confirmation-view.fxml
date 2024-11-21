@@ -4,14 +4,21 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.code.ConfirmationController">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.code.ConfirmationController" stylesheets="@styles.css">
     <children>
-        <AnchorPane prefHeight="150.0" prefWidth="300.0">
+        <AnchorPane prefHeight="200.0" prefWidth="400.0">
             <children>
-                <Label fx:id="confirmationMessage" layoutX="20.0" layoutY="20.0" text="Please confirm the accident details:" />
-                <Button fx:id="confirmButton" layoutX="50.0" layoutY="100.0" mnemonicParsing="false" onAction="#handleConfirm" text="Confirm" />
-                <Button fx:id="cancelButton" layoutX="150.0" layoutY="100.0" mnemonicParsing="false" onAction="#handleCancel" text="Cancel" />
+                <VBox layoutX="20.0" layoutY="10.0" spacing="10.0">
+                    <Label text="Please confirm the accident details:" styleClass="label-confirmation-statement" />
+                    <Label fx:id="confirmationMessage" wrapText="true" text="Accident details will appear here." />
+                    <HBox spacing="20.0" alignment="CENTER">
+                        <Button fx:id="confirmButton" mnemonicParsing="false" onAction="#handleConfirm" text="Confirm" />
+                        <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#handleCancel" text="Cancel" />
+                    </HBox>
+                </VBox>
             </children>
         </AnchorPane>
     </children>

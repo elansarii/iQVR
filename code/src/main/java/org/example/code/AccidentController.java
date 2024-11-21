@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
@@ -39,6 +40,30 @@ public class AccidentController {
         String location = locationField.getText();
         String description = descriptionField.getText();
 
+        // Validate Responsible Vehicle VIN
+        if (!isInteger(responsibleVehicleVIN)) {
+            showAlert("Invalid Input", "Responsible Vehicle VIN must be an integer.");
+            return;
+        }
+
+        // Validate Victim Vehicle VIN
+        if (!isInteger(victimVehicleVIN)) {
+            showAlert("Invalid Input", "Victim Vehicle VIN must be an integer.");
+            return;
+        }
+
+        // Validate Location
+        if (location == null || location.trim().isEmpty()) {
+            showAlert("Invalid Input", "Location cannot be empty.");
+            return;
+        }
+
+        // Validate Description
+        if (description == null || description.trim().isEmpty()) {
+            showAlert("Invalid Input", "Description cannot be empty.");
+            return;
+        }
+
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/example/code/confirmation-view.fxml"));
             Parent confirmationView = loader.load();
@@ -59,6 +84,25 @@ public class AccidentController {
             e.printStackTrace();
         }
     }
+
+    private boolean isInteger(String value) {
+        if (value == null) return false;
+        try {
+            Integer.parseInt(value);
+            return true;
+        } catch (NumberFormatException e) {
+            return false;
+        }
+    }
+    private void showAlert(String title, String message) {
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle(title);
+        alert.setHeaderText(null);
+        alert.setContentText(message);
+        alert.showAndWait();
+    }
+
+
 
     public void finalizeAccidentReport() {
         String responsibleVehicleVIN = responsibleVehicleVINField.getText();

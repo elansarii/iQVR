@@ -1,0 +1,5 @@
+/* src/main/resources/org/example/code/styles.css */
+.label-confirmation-statement {
+    -fx-font-weight: bold; /* Make font bold */
+    -fx-text-fill: red; /* Change text color to red */
+}
