@@ -80,9 +80,11 @@ public class AccidentController {
             Stage stage = new Stage();
             stage.setScene(new Scene(confirmationView));
             stage.show();
+
         } catch (IOException e) {
             e.printStackTrace();
         }
+
     }
 
     private boolean isInteger(String value) {
@@ -115,7 +117,7 @@ public class AccidentController {
     }
 
     @FXML
-    private void handleCancel() {
+    public void handleCancel() {
         try {
             Parent choiceView = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/org/example/code/choice-view.fxml")));
             Scene choiceScene = new Scene(choiceView);

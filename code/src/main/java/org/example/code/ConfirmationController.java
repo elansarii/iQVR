@@ -31,6 +31,8 @@ public class ConfirmationController {
         accidentController.finalizeAccidentReport();
         Stage stage = (Stage) confirmButton.getScene().getWindow();
         stage.close();
+        accidentController.handleCancel();
+
     }
 
     @FXML
