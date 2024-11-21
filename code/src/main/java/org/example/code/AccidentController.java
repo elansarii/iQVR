@@ -65,9 +65,9 @@ public class AccidentController {
         String victimVehicleVIN = victimVehicleVINField.getText();
         String location = locationField.getText();
         String description = descriptionField.getText();
-
-        // Add your accident report logic here
-        System.out.println("Accident reported with details: " + description);
+        AccidentReport report=new AccidentReport(description,responsibleVehicleVIN,victimVehicleVIN,location);
+        report.generateAccidentReport();
+        report.sendReportToInsurance();
     }
 
     @FXML

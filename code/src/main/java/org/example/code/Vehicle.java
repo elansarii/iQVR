@@ -15,7 +15,8 @@ public class Vehicle {
     private boolean insurancePolicy;
     private boolean fitnessCertificate;
 
-    public Vehicle(String vin, String make, String model, int year, boolean isRegistered, Owner owner, Owner prevOwner, boolean insurancePolicy, boolean fitnessCertificate) {
+    public Vehicle(String vin, String make, String model, int year, boolean isRegistered,
+                   Owner owner, Owner prevOwner, boolean insurancePolicy, boolean fitnessCertificate) {
         this.vin = vin;
         this.make = make;
         this.model = model;
@@ -38,6 +39,19 @@ public class Vehicle {
     public void updateOwner() {
         // TODO implement here
     }
+
+
+    public Vehicle findVehicleByVin( String vin) {
+        for (Vehicle vehicle : iQVR.vehicles) {
+            if (vehicle.getVin().equals(vin)) {
+                return vehicle;
+            }
+        }
+        return null;
+    }
+
+
+
 
     public String getVin() {
         return vin;
@@ -81,13 +95,5 @@ public class Vehicle {
 
     public void setPrevOwner(Owner currentOwner) {
         this.prevOwner = currentOwner;
-    }
-    public Vehicle findVehicleByVin( String vin) {
-        for (Vehicle vehicle : iQVR.vehicles) {
-            if (vehicle.getVin().equals(vin)) {
-                return vehicle;
-            }
-        }
-        return null;
     }
 }

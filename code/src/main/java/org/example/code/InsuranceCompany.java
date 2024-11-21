@@ -17,8 +17,13 @@ public class InsuranceCompany {
     public InsuranceCompany() {
     }
 
-
     public void acknowledgeAccident(AccidentReport accident) {
-        // TODO implement here
+        String fileName = "AccidentReport_" + accident.getReportId() + ".txt";
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, true))) {
+            writer.newLine();
+            writer.write("Status: Acknowledged");
+        } catch (IOException e) {
+            System.err.println("Error acknowledging accident report: " + e.getMessage());
+        }
     }
 }

@@ -35,8 +35,7 @@ public class AccidentReport {
         return UUID.randomUUID().toString();
     }
 
-    public void generateAccidentReport(String reportId, LocalDate date, LocalTime time, String location,
-                                       String description, String ownerVehicle, String ownerVin, String victimVin) {
+    public void generateAccidentReport() {
         String fileName = "AccidentReport_" + reportId + ".txt";
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
             writer.write("Accident Report");
@@ -44,21 +43,21 @@ public class AccidentReport {
             writer.write("================");
             writer.newLine();
             writer.newLine();
-            writer.write("Report ID       : " + reportId);
+            writer.write("Report ID       : " + this.reportId);
             writer.newLine();
-            writer.write("Date            : " + date.toString());
+            writer.write("Date            : " + this.getDate().toString());
             writer.newLine();
-            writer.write("Time            : " + time.toString());
+            writer.write("Time            : " + this.getTime().toString());
             writer.newLine();
-            writer.write("Location        : " + location);
+            writer.write("Location        : " + this.getLocation());
             writer.newLine();
-            writer.write("Description     : " + description);
+            writer.write("Description     : " + this.getDescription());
+//            writer.newLine();
+//            writer.write("Owner Vehicle   : " + this.getOwnerVin());
             writer.newLine();
-            writer.write("Owner Vehicle   : " + ownerVehicle);
+            writer.write("Owner VIN       : " + this.getOwnerVin());
             writer.newLine();
-            writer.write("Owner VIN       : " + ownerVin);
-            writer.newLine();
-            writer.write("Victim VIN      : " + victimVin);
+            writer.write("Victim VIN      : " + this.getVictimVin());
             writer.newLine();
             writer.write("================");
             writer.newLine();
@@ -73,6 +72,8 @@ public class AccidentReport {
     }
 
     public void sendReportToInsurance() {
+        InsuranceCompany insuranceCompany = new InsuranceCompany();
+        insuranceCompany.acknowledgeAccident(this);
 
     }
 
