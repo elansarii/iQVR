@@ -47,13 +47,7 @@ public class Manufacturer {
     }
 
 
-    public void addVehicle(Vehicle vehicle) {
-        this.vehiclesProduced.add(vehicle);
-    }
 
-    public void removeVehicle(Vehicle vehicle) {
-        this.vehiclesProduced.remove(vehicle);
-    }
 
     @Override
     public String toString() {

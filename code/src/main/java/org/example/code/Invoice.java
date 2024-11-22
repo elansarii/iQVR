@@ -72,9 +72,7 @@ public class Invoice {
         }
     }
 
-//    public void sendInvoice() {
-//        // TODO implement here
-//    }
+
 
     public String getPaymentStatus() {
         return paymentStatus;

@@ -32,23 +32,8 @@ public class Vehicle {
                 vin, make, model, year, isRegistered, owner.getName(), prevOwner != null ? prevOwner.getName() : "None", insurancePolicy, fitnessCertificate);
     }
 
-    public void validateDetails() {
-        // TODO implement here
-    }
-
-    public void updateOwner() {
-        // TODO implement here
-    }
 
 
-    public Vehicle findVehicleByVin( String vin) {
-        for (Vehicle vehicle : iQVR.vehicles) {
-            if (vehicle.getVin().equals(vin)) {
-                return vehicle;
-            }
-        }
-        return null;
-    }
 
 
 

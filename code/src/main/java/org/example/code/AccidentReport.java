@@ -67,9 +67,7 @@ public class AccidentReport {
         }
     }
 
-    public void retrieveReport() {
 
-    }
 
     public void sendReportToInsurance() {
         InsuranceCompany insuranceCompany = new InsuranceCompany();
