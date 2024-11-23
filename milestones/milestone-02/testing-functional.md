@@ -28,7 +28,7 @@ This test to validates theAccidentReport class, ensuring its methods are working
 ### 2. Test Case: **testGenerateAccidentReport**
 **What is being tested?**
 - The generateAccidentReport method:
-  1. Generates a text file named AccidentReport_<reportId>.txt.
+  1. Generates a text file named AccidentReport.txt
   2. The file should exist after execution.
 
 **Expected Result:**
@@ -76,3 +76,86 @@ This test to validates theAccidentReport class, ensuring its methods are working
 
 ---
 ![alt text](<Screenshot 2024-11-23 212513.png>)
+# Test Report: InvoiceTest
+
+## **Class Under Test**:  Invoice`
+
+### **Purpose**
+Testing functionality of the Invoice class, focusing on:
+- Test invoices with and without provided IDs.
+- Correct generation of invoice IDs and report files.
+- Accurate  invoicet statuses.
+
+---
+
+## **Test Cases**
+
+### 1. Test Case: test Invoice Constructor With Generated Id
+  1. Automatically generate a unique invoice ID.
+  2. Set default values for payment status unpaid, issue date, and due date (30 days from the issue date).
+
+**Expected Result:**
+- The invoice object should:
+  - Have a non-null ID.
+  - Default paymentStatus to unpaid.
+  - Set issueDate to today's date.
+  - Set dueDate to 30 days from today.
+
+**Actual Result:**
+- The test passed, confirming the expected behavior.
+
+---
+
+### 2. Test Case: testInvoiceConstructorWithProvidedId
+- The Invoice constructor's behavior when an invoice ID is explicitly provided.
+
+**Expected Result:**
+- The object should correctly initialize all properties, including:
+  - The provided ID.
+  - Given  amount, issueDate, dueDate, ownerQid, paymentStatus, and description.
+
+**Actual Result:**
+- The test passed, indicating the constructor correctly handled provided data.
+
+---
+
+### 3. Test Case: testGenerateInvoiceId
+- The Invoice class's ability to generate a valid UUID for the invoice ID.
+
+**Expected Result:**
+- The generated ID:
+  1. Should not be null.
+  2. Should be a valid UUID format.
+
+**Actual Result:**
+- The test passed, confirming the generated ID was valid and met the expected criteria.
+
+---
+
+### 4. Test Case: testGenerateInvoiceReport
+- generateInvoiceReport:
+  1. Generates a report file named Invoice.txt.
+  2. The file content should match the invoice's details.
+
+**Expected Result:**
+- The file should:
+  - Exist.
+  - Contain all the invoice details in the expected format, including:
+    - Invoice ID, Amount, Issue Date, Due Date, Owner QID, Payment Status, and Description.
+
+**Actual Result:**
+- The test passed, verifying the file was generated successfully and the content matched the expected structure.
+
+---
+
+### 5. Test Case: testSetPaymentStatus
+- The behavior of the  setPaymentStatus method when updating the payment status.
+
+**Expected Result:**
+- The payment status should:
+  - Initially default to unpaid.
+  - Update to paid after invoking the method.
+
+**Actual Result:**
+- The test passed, confirming the payment status was correctly updated.
+
