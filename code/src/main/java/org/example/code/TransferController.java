@@ -67,9 +67,6 @@ public class TransferController {
         billsChecked = true;
         confirmButton.setDisable(false);
 
-        billsChecked = true;
-        confirmButton.setDisable(false);
-
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Bills Checked");
         alert.setHeaderText("All bills are paid");
@@ -87,17 +84,17 @@ public class TransferController {
         String currentOwnerVin = currentOwnerVinField.getText();
         String newOwnerPhone = newOwnerPhoneField.getText();
 
-
-        if (!isInteger(currentOwnerVin)) {
-            showAlert("Invalid Input", "Current Owner VIN must be an integer.", "Please enter a valid VIN.");
+        if (currentOwnerVin == null || currentOwnerVin.trim().isEmpty()) {
+            showAlert("Invalid Input", "Current Owner VIN cannot be empty.", "Please enter a valid VIN.");
             return;
         }
 
-
+        // Validate New Owner Phone Number
         if (!isValidPhoneNumber(newOwnerPhone)) {
             showAlert("Invalid Input", "New Owner Phone Number must be a valid phone number.", "Please enter a valid phone number.");
             return;
         }
+
         Owner currentOwner = findOwner(currentOwnerQidField.getText());
         Owner newOwner = findOwner(newOwnerQidField.getText());
         String vin = currentOwnerVinField.getText();
@@ -111,7 +108,6 @@ public class TransferController {
         billsChecked = false;
         confirmButton.setDisable(true);
 
-        
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Transfer Complete");
         alert.setHeaderText(null);
@@ -120,7 +116,6 @@ public class TransferController {
 
         handleCancel();
     }
-
 
     private Owner findOwner(String qid) {
         for (Owner o : iQVR.owners) {
@@ -141,16 +136,6 @@ public class TransferController {
             window.show();
         } catch (IOException e) {
             e.printStackTrace();
-        }
-    }
-
-    private boolean isInteger(String value) {
-        if (value == null) return false;
-        try {
-            Integer.parseInt(value);
-            return true;
-        } catch (NumberFormatException e) {
-            return false;
         }
     }
 
