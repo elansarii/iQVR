@@ -1,0 +1,12 @@
+Invoice Report
+==============
+
+Invoice ID      : 0001
+Amount          : $150.00
+Issue Date      : 2024-07-12
+Due Date        : 2024-08-12
+Owner QID       : 12345
+Payment Status  : paid
+Description     : Registration Fee
+==============
+End of Report
