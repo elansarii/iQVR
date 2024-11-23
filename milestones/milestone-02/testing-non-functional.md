@@ -50,6 +50,13 @@ Testing Reliability for transfer use case:
 		 ![[Pasted image 20241123211944.png]]
 		 after hitting ok:
 		 ![[Pasted image 20241123212009.png]]
-2- Testing Portability:
-	Testing if it works in Windows
-	![[Pasted image 20241123212930.png]]
+  2- Testing Portability:
+Testing if it works in Windows:
+![[Pasted image 20241123231213.png]]
+
+	
+	
+testing if it work in mac:
+![[Pasted image 20241123231018.png]]
+	 
+	

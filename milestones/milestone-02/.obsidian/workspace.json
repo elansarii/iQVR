@@ -6,7 +6,6 @@
       {
         "id": "aeb6e31cbb084043",
         "type": "tabs",
-        "dimension": 61.91176470588235,
         "children": [
           {
             "id": "337ccc76f4ad7d41",
@@ -14,29 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "testing-functional.md",
+                "file": "testing-non-functional.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "testing-functional"
-            }
-          }
-        ]
-      },
-      {
-        "id": "afdd546a7c8e6590",
-        "type": "tabs",
-        "dimension": 38.088235294117645,
-        "children": [
-          {
-            "id": "b222ccf1b403eda4",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "title": "testing-non-functional"
             }
           }
         ]
@@ -176,25 +158,28 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b222ccf1b403eda4",
+  "active": "230e7a8a4f79e387",
   "lastOpenFiles": [
-    "testing-functional.md",
-    "Screenshot 2024-11-23 212513.png",
+    "Testing pictures/Pasted image 20241123231213.png",
+    "Testing pictures/Pasted image 20241123231018.png",
+    "constraints-qualities.md",
     "testing-non-functional.md",
+    "Testing pictures/20241123-1949-58.2416247.mp4",
+    "Testing pictures/WindowsExample.mp4",
+    "testing-functional.md",
+    "Testing pictures/Pasted image 20241123224753.png",
+    "Testing pictures/Pasted image 20241123224602.png",
+    "Testing pictures/Pasted image 20241123224318.png",
+    "Testing pictures/Pasted image 20241123224104.png",
+    "Testing pictures/MacExample.mp4",
+    "Testing pictures/WhatsApp Video 2024-11-23 at 22.29.24_1116748e.mp4",
+    "Testing pictures/Screenshot 2024-11-23 212513 1.png",
+    "Welcome.md",
+    "Testing pictures/Screenshot 2024-11-23 212513.png",
     "Testing pictures/Pasted image 20241123212930.png",
-    "Pasted image 20241123212930.png",
-    "Testing pictures/Pasted image 20241123211821.png",
-    "Testing pictures/Pasted image 20241123211646.png",
-    "Testing pictures/Pasted image 20241123211522.png",
-    "Testing pictures/Pasted image 20241123211325.png",
-    "Testing pictures/Pasted image 20241123211201.png",
-    "Testing pictures/Pasted image 20241123211047.png",
+    "Testing pictures/Pasted image 20241123212009.png",
     "Testing pictures/Pasted image 20241123211944.png",
     "Testing pictures",
-    "Picture for the non functional testing",
-    "New folder",
-    "readme.md",
-    "constraints-qualities.md",
-    "Welcome.md"
+    "readme.md"
   ]
 }
