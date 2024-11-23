@@ -86,6 +86,6 @@
 
 #### 2. Reporting
 - The system should generate detailed reports to the government, owners, and insurance companies. 
-
+---
 #### 3. User support 
 - The system should offer to the users an AI chatbot to help vehicle owners and new employees who work on the sytsem and does not know how to use the system.
