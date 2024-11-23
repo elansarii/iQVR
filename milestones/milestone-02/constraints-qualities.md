@@ -39,3 +39,4 @@
 ### 2.1 Performance
 - The system should be able to handle 10 million vehicles concurrently, and also be able to handle more that 30 million vehicles in the next 10 years.
 
+- The system should work in different operating systems.
