@@ -31,3 +31,22 @@ all valid and then the asked to confirm
 ![[Pasted image 20241123203024.png]]
 After confirming we will return back to the main menu
 ![[Pasted image 20241123203139.png]]
+Testing Reliability for transfer use case:
+	we have already data installed in data loader
+		with names: Mohammed, Hamza, Yazan, Ahmad
+		 and QIDs: 1000, 2000, 3000, 4000
+	1- first case if we provide a wrong QID and tried to check pills
+	![[Pasted image 20241123211201.png]]
+	 2- second if we entered a valid QID:
+	 ![[Pasted image 20241123211325.png]]
+	 3- if did not enter a valid VIN and tried to transfer the car:
+	 ![[Pasted image 20241123211522.png]]
+	 4- fourth case if we tried to transfer a valid car to invalid QID:
+	 ![[Pasted image 20241123211646.png]]
+	 7- if we entered a phone number with more than 8 digits or Strings instead of integer:
+	 ![[Pasted image 20241123211821.png]]
+	 ![[Pasted image 20241123211855.png]]
+	 8- if all information are valid:
+		 ![[Pasted image 20241123211944.png]]
+		 after hitting ok:
+		 ![[Pasted image 20241123212009.png]]
