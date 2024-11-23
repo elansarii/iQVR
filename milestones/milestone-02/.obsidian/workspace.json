@@ -11,14 +11,10 @@
             "id": "337ccc76f4ad7d41",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "constraints-qualities.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "constraints-qualities"
+              "title": "New tab"
             }
           }
         ]
@@ -109,7 +105,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "constraints-qualities.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +114,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for constraints-qualities"
+              "title": "Backlinks"
             }
           },
           {
@@ -128,12 +123,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "constraints-qualities.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from constraints-qualities"
+              "title": "Outgoing links"
             }
           },
           {
@@ -154,11 +148,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "constraints-qualities.md"
-              },
+              "state": {},
               "icon": "lucide-list",
-              "title": "Outline of constraints-qualities"
+              "title": "Outline"
             }
           }
         ]
@@ -180,10 +172,10 @@
   },
   "active": "337ccc76f4ad7d41",
   "lastOpenFiles": [
-    "readme.md",
     "testing-non-functional.md",
-    "Welcome.md",
     "testing-functional.md",
-    "constraints-qualities.md"
+    "readme.md",
+    "constraints-qualities.md",
+    "Welcome.md"
   ]
 }
