@@ -73,5 +73,18 @@ public class Owner {
     public String getPhoneNumber() {
         return phoneNumber;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Owner owner = (Owner) obj;
+        return Objects.equals(qid, owner.qid);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(qid);
+    }
+
 }
 

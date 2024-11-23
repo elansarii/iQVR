@@ -27,7 +27,7 @@ public class Invoice {
         this.description = description;
     }
 
-    public Invoice(String invoiceId, double amount, LocalDate dueDate, LocalDate issueDate,
+    public Invoice(String invoiceId, double amount, LocalDate issueDate, LocalDate dueDate,
                    String ownerQid, String paymentStatus, String description) {
         this.invoiceId = invoiceId;
         this.amount = amount;
