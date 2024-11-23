@@ -2,10 +2,10 @@
 ## 1.1 Technical Constraints
 - **Constraint 1**: The use of qPay
 - _Description_: The Qpay payment system will remain concected to the IQVR system which is used for all transactions in the IQVR system.
----
+
 - **Constraint 2**: One system administrator
 - _Description_: The IQVR should be managed by only 1 employe.
----
+
 - **Constraint 3**: Online-only functionality
 - _Description_: As the system works only online, it adds a requirement to the users to be constantly connected to the internet. As well as, the other external system that IQVR depends on, such as: Qpay.
 ---
