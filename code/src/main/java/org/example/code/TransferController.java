@@ -54,26 +54,21 @@ public class TransferController {
 
         Owner owner = findOwner(currentOwnerQid);
         if (owner == null) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Error");
-            alert.setHeaderText("Owner Not Found");
-            alert.setContentText("No owner with QID: " + currentOwnerQid);
-            alert.showAndWait();
+            showAlert("Error", "Owner Not Found", "No owner with QID: " + currentOwnerQid);
             return;
         }
 
         boolean billsArePaid = owner.findOutstandingBills(owner.getQid());
         if (!billsArePaid) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Error");
-            alert.setHeaderText("Unpaid Bills");
-            alert.setContentText("You have unpaid bills");
-            alert.showAndWait();
+            showAlert("Error", "Unpaid Bills", "You have unpaid bills");
             return;
         }
 
         billsChecked = true;
-        confirmButton.setDisable(false); // Enable the Confirm Transfer button
+        confirmButton.setDisable(false);
+
+        billsChecked = true;
+        confirmButton.setDisable(false);
 
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Bills Checked");
@@ -85,24 +80,29 @@ public class TransferController {
     @FXML
     private void handleConfirmTransfer() {
         if (!billsChecked) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Error");
-            alert.setHeaderText("Bills Not Checked");
-            alert.setContentText("Please check bills before confirming transfer.");
-            alert.showAndWait();
+            showAlert("Error", "Bills Not Checked", "Please check bills before confirming transfer.");
             return;
         }
 
+        String currentOwnerVin = currentOwnerVinField.getText();
+        String newOwnerPhone = newOwnerPhoneField.getText();
+
+
+        if (!isInteger(currentOwnerVin)) {
+            showAlert("Invalid Input", "Current Owner VIN must be an integer.", "Please enter a valid VIN.");
+            return;
+        }
+
+
+        if (!isValidPhoneNumber(newOwnerPhone)) {
+            showAlert("Invalid Input", "New Owner Phone Number must be a valid phone number.", "Please enter a valid phone number.");
+            return;
+        }
         Owner currentOwner = findOwner(currentOwnerQidField.getText());
         Owner newOwner = findOwner(newOwnerQidField.getText());
         String vin = currentOwnerVinField.getText();
-
         if (currentOwner == null || newOwner == null) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Error");
-            alert.setHeaderText("Invalid Owner");
-            alert.setContentText("Owner information not correct");
-            alert.showAndWait();
+            showAlert("Error", "Invalid Owner", "Owner information not correct");
             return;
         }
 
@@ -110,7 +110,17 @@ public class TransferController {
 
         billsChecked = false;
         confirmButton.setDisable(true);
+
+        
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Transfer Complete");
+        alert.setHeaderText(null);
+        alert.setContentText("The transfer has been successfully completed.");
+        alert.showAndWait();
+
+        handleCancel();
     }
+
 
     private Owner findOwner(String qid) {
         for (Owner o : iQVR.owners) {
@@ -132,5 +142,27 @@ public class TransferController {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    private boolean isInteger(String value) {
+        if (value == null) return false;
+        try {
+            Integer.parseInt(value);
+            return true;
+        } catch (NumberFormatException e) {
+            return false;
+        }
+    }
+
+    private boolean isValidPhoneNumber(String phoneNumber) {
+        return phoneNumber != null && phoneNumber.matches("\\d{8}");
+    }
+
+    private void showAlert(String title, String header, String content) {
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle(title);
+        alert.setHeaderText(header);
+        alert.setContentText(content);
+        alert.showAndWait();
     }
 }
