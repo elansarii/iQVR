@@ -1,4 +1,4 @@
-Testing Reliability :
+1- Testing Reliability :
 testing the validation of Report Accident
 	1- First case if we do not provide VIN for the owner
 ![[Pasted image 20241123194247.png]]
@@ -50,3 +50,6 @@ Testing Reliability for transfer use case:
 		 ![[Pasted image 20241123211944.png]]
 		 after hitting ok:
 		 ![[Pasted image 20241123212009.png]]
+2- Testing Portability:
+	Testing if it works in Windows
+	![[Pasted image 20241123212930.png]]
