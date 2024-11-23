@@ -61,9 +61,9 @@
 - All data transmited between the user and the the system must be secured from hackers or anyone who is not authorized. 
 ---
 ### 2.3 Reliabiity 
+- Incorrect input in the text field should be properly validated and handled.
 - The system by default should not crash, but in case of a failure happens, the system should recover and handle users requests within a couple of minutes.
 - Backup modules should exits so the systesm are available for users regularly.
-- Incorrect input in the text field should be properly validated and handled.
 ---
 ### 2.4 Usability
 - The system should work in different operating systems such as: Mac, Linux, Windows. As well as, it should be responsive i.e. works with mobile phones, tablets\Ipdas, desktops, etc..

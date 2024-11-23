@@ -6,6 +6,7 @@
       {
         "id": "aeb6e31cbb084043",
         "type": "tabs",
+        "dimension": 61.91176470588235,
         "children": [
           {
             "id": "337ccc76f4ad7d41",
@@ -26,6 +27,7 @@
       {
         "id": "afdd546a7c8e6590",
         "type": "tabs",
+        "dimension": 38.088235294117645,
         "children": [
           {
             "id": "b222ccf1b403eda4",
@@ -174,20 +176,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "337ccc76f4ad7d41",
+  "active": "b222ccf1b403eda4",
   "lastOpenFiles": [
-    "Pasted image 20241123194722.png",
-    "Pasted image 20241123194703.png",
-    "Pasted image 20241123194541.png",
-    "Pasted image 20241123194529.png",
-    "Pasted image 20241123194454.png",
-    "Pasted image 20241123194443.png",
-    "Pasted image 20241123194418.png",
-    "Pasted image 20241123194402.png",
-    "Pasted image 20241123194333.png",
-    "Pasted image 20241123194320.png",
-    "Pasted image 20241123194300.png",
     "testing-non-functional.md",
+    "Testing pictures/Pasted image 20241123203024.png",
+    "Testing pictures/Pasted image 20241123202934.png",
+    "Testing pictures/Pasted image 20241123202922.png",
+    "Testing pictures/Pasted image 20241123202911.png",
+    "Testing pictures/Pasted image 20241123203139.png",
+    "Pasted image 20241123203139.png",
+    "Pasted image 20241123203024.png",
+    "Pasted image 20241123202934.png",
+    "Pasted image 20241123202922.png",
+    "Pasted image 20241123202911.png",
+    "Testing pictures",
+    "Picture for the non functional testing",
+    "New folder",
     "testing-functional.md",
     "readme.md",
     "constraints-qualities.md",

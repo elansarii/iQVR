@@ -20,7 +20,14 @@ Error occurred for not providing an integer
 ![[Pasted image 20241123194529.png]]
 error for not providing a location
 ![[Pasted image 20241123194541.png]]
-	6- last case if we did not provide a Description 
+	6- sixth case if we did not provide a Description 
 ![[Pasted image 20241123194703.png]]
 Error for not providing a Description
+
 ![[Pasted image 20241123194722.png]]
+	7- last case when we provide all valid inputs 
+![[Pasted image 20241123202934.png]]
+all valid and then the asked to confirm
+![[Pasted image 20241123203024.png]]
+After confirming we will return back to the main menu
+![[Pasted image 20241123203139.png]]
