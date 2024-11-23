@@ -1,6 +1,6 @@
 # Project
  
-Include a summary of the project and an overview of the milestones, design, and implementation.
+The project is all about create 
  
 ## Team
  
@@ -11,8 +11,8 @@ Include a summary of the project and an overview of the milestones, design, and 
  
 ## Challenges
  
-1. Challenge #1 with details
-2. Challenge #2 with details
+1. How to do the testing process for both functional and non-functional requirements, as  team members who are working on the testing part did not have enough knowledge from just one lab session to cover the testing.
+2. How to create a sequence diagram for a intermediate to a big use-case.
 3. ...
  
 ## Lessons
@@ -23,7 +23,7 @@ Include a summary of the project and an overview of the milestones, design, and 
  
 ## Issues
  
-1. Issue #1 with details
+1. We encountered an issue while attempting to run the program on Kali Linux within a virtual machine.
 2. Issue #2 with details
 3. ...
  
