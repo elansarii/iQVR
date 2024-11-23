@@ -11,6 +11,19 @@
 ---
 - **Constraint 4**: Users scalability
 - _Description_: The system must handle large users simultaneously using the system with different purposes.
+
+---
+- **Constraint 5**: Tight budget
+- _Description_: The police department have a total money for not more than 10 new technicals for the system. Furthermore, the department allocated a budget for only 20 new servers for the project.
+
+---
+- **Constraint 6**: Programming languages used in the project
+- _Description_: Most of the project should be built using Java and C as programming languages.
+---
+
+- **Constraint 7**: Data management
+- _Description_: IQVR must use as an external software regarding the registration system which use Oracle database system.
+
 ---
 ## 1.2 Operational Guidelines Constraints
 - **Constraint 1**: Required insurance policy
@@ -31,12 +44,39 @@
 - _Description_: The system should provide security for the data, such as: owner QID, VIN.
 ---
 - **Constraint 2**: Restricted access
- - _Description_: Each user should have specific user interface for his/her role. For example, a vehicle owner will have a different access and a different privileges compared to an officer.
+- _Description_: Each user should have specific user interface for his/her role. For example, a vehicle owner will have a different access and a different privileges compared to an officer.
 ---
+- **Constraint 3**: System deadline
+- _Description_: The first version of IQVR should  be done in 3 months. And any other delay will cost the police department extra money as the system should operate after a year.
+
 # 2. Quality Requirements (Non-Functional Requirements)
-### :arrow_right: We can categorize these requirements into 6 groups: performance, security, reliability, usability, scalability, and maintainability.
+### ➡️ We can categorize these requirements into 6 groups: performance, security, reliability, usability, scalability, and maintainability.
 
 ### 2.1 Performance
-- The system should be able to handle 10 million vehicles concurrently, and also be able to handle more that 30 million vehicles in the next 10 years.
+- The system should be able to handle 10 million vehicles concurrently.
+- The system must process the requests and handle them in 5 seconds for at least 90% of the users under normal conditions.
+---
 
-- The system should work in different operating systems.
+### 2.2 Security 
+- All data transmited between the user and the the system must be secured from hackers or anyone who is not authorized. 
+---
+### 2.3 Reliabiity 
+- The system by default should not crash, but in case of a failure happens, the system should recover and handle users requests within a couple of minutes.
+- Backup modules should exits so the systesm are available for users regularly.
+---
+### 2.4 Usability
+- The system should work in different operating systems such as: Mac, Linux, Windows. As well as, it should be responsive i.e. works with mobile phones, tablets\Ipdas, desktops, etc..
+---
+### 2.5 Scalability
+- IQVR should handle more than 30 million vehicles in the next 10 years.
+- IQVR system's component might be operate on different machines on several locations.
+---
+### 2.6 Maintainability
+- The softwares in the system should not be highly depending on each other and they should be more precise on what they provide.
+
+ ---
+# 3 Additional Qualities
+
+### ➡️ As we were doing the project, we have assumed that these qualities should exist in the the system.
+
+- 
