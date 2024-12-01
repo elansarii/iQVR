@@ -1,3 +1,9 @@
+---
+marp: true
+theme: default
+class: lead
+---
+
 ## **iQVR System Overview**
 
 ### **Team Members:**
