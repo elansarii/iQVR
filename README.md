@@ -51,4 +51,4 @@ Third, we started implementing the diagrams such as DFD and use case. Fourth, ea
 - [Working with Sequence Diagram](https://staruml.readthedocs.io/en/latest/modeling-with-uml/working-with-sequence-diagram.html#:~:text=UML%20Sequence%20Diagram.-,Lifeline,as%20the%20size%20of%20Lifeline.) Used StarUML documentation to know how to add a lifeline in StaruMUL.
 - [Sequence Diagrams – Unified Modeling Language (UML)](https://www.geeksforgeeks.org/unified-modeling-language-uml-sequence-diagrams/#11-actors) To get a better understanding about the difference between an actor and a lifeline in sequence diagram.
 - [emoji-cheat-sheet](https://github.com/ikatyang/emoji-cheat-sheet) Used this repository to get the shortcode for emojis to make the constrints file and other markdown files more clearer for readers.
-- [Plug-in (computing)](https://en.wikipedia.org/wiki/Plug-in_(computing)) Used this article to understand what does Plug-in mean in tech.
+- [Plug-in (computing)](https://en.wikipedia.org/wiki/Plug-in_(computing)) Used this article to understand what does Plug-in mean in tech which was mentioned in the project description.
