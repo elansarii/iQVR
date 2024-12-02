@@ -40,10 +40,7 @@ class: lead
   - Developed a diagram to capture the interactions between users and the system.
 
 - **Class Diagram:**  
-  - Designed a cohesive and maintainable class diagram following object-oriented principles to model the system's structure.
-
-- **Design Principles:**  
-  - Applied key design principles such as encapsulation, modularity, and reusability to ensure a scalable architecture.
+  - Designed a cohesive and maintainable class diagram.
 
 ---
 
@@ -84,9 +81,6 @@ class: lead
   - Struggled with effectively assigning responsibilities to different classes in the application, requiring adjustments in design.
 
 ---
-Here’s a more concise version of the potential improvements:
-
----
 
 ### **Potential Improvements in Implementation:**
 
@@ -94,21 +88,21 @@ Here’s a more concise version of the potential improvements:
    - **Improve Data Reliability:** Replace file-based storage with an SQL database (e.g., Oracle DB) for persistent, secure data storage and scalable data management.
 
 2. **Enhanced Visual Libraries:**
-   - **Upgrade UI Components:** Use advanced JavaFX libraries like **JFoenix** or **ControlsFX** to achieve a modern and polished design with better UI controls and visuals.
+   - Use advanced JavaFX libraries like **JFoenix** or **ControlsFX** to achieve a modern and polished design with better UI controls and visuals.
 
 3. **UI/UX Enhancements:**
-   - **Improve User Experience:** Implement responsive design, intuitive navigation, consistent visual themes, and accessibility features to create a user-friendly interface.
-
-4. **Error Handling & Logging:**
-   - **Robust Error Management:** Introduce detailed error handling (try-catch) and logging (Log4j) to improve stability, diagnostics, and provide clearer user feedback.
-
-5. **Performance Optimization:**
-   - **Speed Up Processes:** Profile and optimize the application’s performance, focusing on efficient database queries and asynchronous processing to enhance responsiveness.
+   - Implement responsive design, intuitive navigation.
+   
 ---
 
 ### **Testing:**
-- 
+-  Tested functional features
+- Testing non-functional features
 
 
 
-## **Milestone 3: (To Be Defined)**
+## Outcomes
+
+
+
+
