@@ -69,6 +69,27 @@ class: lead
 
 ---
 
+### **Potential Improvements in Implementation:**
+
+1. **SQL Database Integration:**
+   - **Improve Data Reliability:** Replace file-based storage with an SQL database (e.g., Oracle DB) for persistent, secure data storage and scalable data management.
+
+2. **Enhanced Visual Libraries:**
+   - Use advanced JavaFX libraries like **JFoenix** or **ControlsFX** to achieve a modern and polished design with better UI controls and visuals.
+
+3. **UI/UX Enhancements:**
+   - Implement responsive design, intuitive navigation.
+
+---
+
+### **Testing:**
+1. Tested functional features
+    - Ensured functionality of GUI
+    -  Tested for correct output and invoices
+2. Testing non-functional features
+    - Tested portability of the program, and functionalities across different Operating systems
+  
+
 ### **Challenges in Implementation:**
 
 - **Modern Design with FX Libraries:**  
@@ -81,25 +102,6 @@ class: lead
   - Struggled with effectively assigning responsibilities to different classes in the application, requiring adjustments in design.
 
 ---
-
-### **Potential Improvements in Implementation:**
-
-1. **SQL Database Integration:**
-   - **Improve Data Reliability:** Replace file-based storage with an SQL database (e.g., Oracle DB) for persistent, secure data storage and scalable data management.
-
-2. **Enhanced Visual Libraries:**
-   - Use advanced JavaFX libraries like **JFoenix** or **ControlsFX** to achieve a modern and polished design with better UI controls and visuals.
-
-3. **UI/UX Enhancements:**
-   - Implement responsive design, intuitive navigation.
-   
----
-
-### **Testing:**
--  Tested functional features
-- Testing non-functional features
-
-
 
 ## Outcomes
 
