@@ -40,9 +40,9 @@ Third, we started implementing the diagrams such as DFD and use case. Fourth, ea
  
 ## References
  
-- [What is the difference between association, aggregation and composition?] (https://stackoverflow.com/questions/885937/what-is-the-difference-between-association-aggregation-and-composition) Used for reviewing the concepts for association, aggregation, and composition regarding the class diagram.
-- [Aggregation versus Composition [closed]] (https://stackoverflow.com/questions/734891/aggregation-versus-composition) because I did not use the class diagram for a while, I was a bit confused between aggregation and composition. Hence, I had to read more about them with some simple examples.
-- [What is Multiplicity] (https://blog.visual-paradigm.com/what-is-multiplicity/) Used this article to review the types of multiplicity as this shows them in a clean and simple way to use them in the class diagram.
+- [What is the difference between association, aggregation and composition?](https://stackoverflow.com/questions/885937/what-is-the-difference-between-association-aggregation-and-composition) Used for reviewing the concepts for association, aggregation, and composition regarding the class diagram.
+- [Aggregation versus Composition [closed]](https://stackoverflow.com/questions/734891/aggregation-versus-composition) because I did not use the class diagram for a while, I was a bit confused between aggregation and composition. Hence, I had to read more about them with some simple examples.
+- [What is Multiplicity](https://blog.visual-paradigm.com/what-is-multiplicity/) Used this article to review the types of multiplicity as this shows them in a clean and simple way to use them in the class diagram.
 - [Typewolf fonts](https://www.typewolf.com/google-fonts) Used for fonts to use in javafx.
 - [Color gradients](https://mycolor.space/?hex=%238A1538&sub=1) Used for color gradient hex codes.
 - [Designing a javafx application](https://youtu.be/Aliw3lNRzfc?si=BnYgEL5zKFFszB-I) Used to gain inspiration for styling and  designing javafx.
