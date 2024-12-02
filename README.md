@@ -1,6 +1,6 @@
 # Project
  
-The project was about developing an online system called IQVR, 
+The project is about developing an online system called IQVR, 
 the system has a couple of main functions such as registering a car, 
 transferring a car from one owner to another, or paying the violation invoices. 
 It also provides some important functionalities for the police department as it gives the police officer the ability to make a confiscating order for the violated vehicle. 
