@@ -85,26 +85,29 @@ class: lead
 ### **Testing:**
 1. Tested functional features
     - Ensured functionality of GUI
-    -  Tested for correct output and invoices
+    - Tested for correct output and invoices
 2. Testing non-functional features
-    - Tested portability of the program, and functionalities across different Operating systems
+    - Tested portability of the program
   
-
-### **Challenges in Implementation:**
-
-- **Modern Design with FX Libraries:**  
-  - Faced difficulties in using FX libraries to achieve a modern and polished design for the frontend.
-
-- **Scene Builder Issues:**  
-  - Encountered limitations with Scene Builder, particularly regarding the integration of external libraries.
-
-- **Class Responsibility Distribution:**  
-  - Struggled with effectively assigning responsibilities to different classes in the application, requiring adjustments in design.
-
 ---
 
-## Outcomes
+## **Challenges & Outcomes**
+
+### **Challenges:**
+- **Modern Design with FX Libraries:**  
+  - Faced difficulties in using FX libraries
+
+- **Scene Builder Issues:**  
+  - Encountered limitations with Scene Builder
+
+- **Class Responsibility Distribution:**  
+  - Struggled with effectively assigning responsibilities
 
 
+### **Outcomes:**
+- **Chat bots are impressive (not really):**
+  - Helpful to get things initiated
+  - A good friend to talk
+  - Very annoying
 
 
