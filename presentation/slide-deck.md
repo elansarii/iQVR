@@ -1,22 +1,8 @@
 ---
 marp: true
 theme: rose-pine
-# theme: rose-pine-dawn
-# theme: rose-pine-moon
 ---
-<style lang=css> /* @theme rose-pine-dawn */
-/*
-Rosé Pine theme create by RAINBOWFLESH
-> www.rosepinetheme.com
-MIT License https://github.com/rainbowflesh/Rose-Pine-For-Marp/blob/master/license
-
-palette in :root
-*/
-
-@import "default";
-@import "schema";
-@import "structure";
-
+<style lang=css>
 :root {
     --base: #faf4ed;
     --surface: #fffaf3;
@@ -33,121 +19,21 @@ palette in :root
     --highlight-low: #f4ede8;
     --highlight-muted: #dfdad9;
     --highlight-high: #cecacd;
+}
 
-    font-family: Pier Sans, ui-sans-serif, system-ui, -apple-system,
-        BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
-        sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol,
-        "Noto Color Emoji";
-    font-weight: initial;
-
-    background-color: var(--base);
-}
-/* Common style */
-h1 {
-    color: var(--rose);
-    padding-bottom: 2mm;
-    margin-bottom: 12mm;
-}
-h2 {
-    color: var(--rose);
-}
-h3 {
-    color: var(--rose);
-}
-h4 {
-    color: var(--rose);
-}
-h5 {
-    color: var(--rose);
-}
-h6 {
-    color: var(--rose);
-}
-a {
-    color: var(--iris);
+h1, h2, h3, h4, h5, h6 {
+    color: var(--rose) !important;
 }
 p {
-    font-size: 20pt;
-    font-weight: 600;
     color: var(--text);
 }
-code {
-    color: var(--text);
-    background-color: var(--highlight-muted);
-}
-text {
-    color: var(--text);
-}
-ul {
-    color: var(--subtle);
-}
-li {
-    color: var(--subtle);
-}
-img {
-    background-color: var(--highlight-low);
-}
-strong {
-    color: var(--text);
-    font-weight: inherit;
-    font-weight: 800;
-}
-mjx-container {
-    color: var(--text);
-}
-marp-pre {
-    background-color: var(--overlay);
-    border-color: var(--highlight-high);
-}
+</style>
 
-/* Code blok */
-.hljs-comment {
-    color: var(--muted);
-}
-.hljs-attr {
-    color: var(--foam);
-}
-.hljs-punctuation {
-    color: var(--subtle);
-}
-.hljs-string {
-    color: var(--gold);
-}
-.hljs-title {
-    color: var(--foam);
-}
-.hljs-keyword {
-    color: var(--pine);
-}
-.hljs-variable {
-    color: var(--text);
-}
-.hljs-literal {
-    color: var(--rose);
-}
-.hljs-type {
-    color: var(--love);
-}
-.hljs-number {
-    color: var(--gold);
-}
-.hljs-built_in {
-    color: var(--love);
-}
-.hljs-params {
-    color: var(--iris);
-}
-.hljs-symbol {
-    color: var(--foam);
-}
-.hljs-meta {
-    color: var(--subtle);
-}</style>
+# <span style="color: #d7827e;">iQVR System Overview</span>
 
+---
 
-## **iQVR System Overview**
-
-### **Team Members:**
+### <span style="color: #d7827e;">Team Members:</span>
 1. Mohamed Elansari  
 2. Hamza Aljaji  
 3. Ahmed Almashhadani  
@@ -155,26 +41,28 @@ marp-pre {
 
 ---
 
-## **Milestone 1: Ideation & Modeling**
+## <span style="color: #d7827e;">Milestone 1: Ideation & Modeling</span>
 
-### **Ideation:**
+---
+
+### <span style="color: #d7827e;">Ideation:</span>
 - **Extracting Requirements:**  
-  - Carefully analyzed and extracted both functional and non-functional requirements from the project documentation.
+  - Carefully analyzed and extracted both functional and non-functional requirements.
   
 - **Functional Requirements:**
   - List of system features and behaviors required for operation.
 
 ---
 
-- **Non-Functional Requirements:**
+### <span style="color: #d7827e;">Non-Functional Requirements:</span>
   - System performance, security, scalability, and usability standards.
 
 - **Use Case Specification:**  
-  - Defined the use cases for the critical parts of the program to ensure a clear understanding of user interactions.
+  - Defined the use cases for the critical parts of the program.
 
 ---
 
-### **Modeling:**
+### <span style="color: #d7827e;">Modeling:</span>
 
 - **Level 0 and 1 Data Flow Diagrams (DFD):**  
   - Created clear and detailed DFDs to visualize the data processing within the system at a high level.
@@ -187,22 +75,24 @@ marp-pre {
 
 ---
 
-## **Milestone 2: Planning & Implementation**
+## <span style="color: #d7827e;">Milestone 2: Planning & Implementation</span>
 
-### **Planning:**
+---
+
+### <span style="color: #d7827e;">Planning:</span>
 
 - **Sequence Diagram:**  
-  - Designed a sequence diagram to detail the flow of the system’s interactions, focusing on the order of operations.
+  - Designed a sequence diagram to detail the flow of the system’s interactions.
 
 - **Identifying Key Features:**  
   - Determined core features and functionalities required for successful implementation.
 
 ---
 
-### **Implementation:**
+### <span style="color: #d7827e;">Implementation:</span>
 
 - **Use Case Implementation (Java & JavaFX):**  
-  - Developed the program's use cases using Java and JavaFX for front-end development, focusing on clean user interfaces.
+  - Developed the program's use cases using Java and JavaFX for front-end development.
 
 - **Styling with CSS:**  
   - Applied CSS to enhance the visual appeal and improve the user experience.
@@ -212,7 +102,7 @@ marp-pre {
 
 ---
 
-### **Potential Improvements in Implementation:**
+### <span style="color: #d7827e;">Potential Improvements in Implementation:</span>
 
 1. **SQL Database Integration:**
    - **Improve Data Reliability:** Replace file-based storage with an SQL database (e.g., Oracle DB) for persistent, secure data storage and scalable data management.
@@ -225,7 +115,7 @@ marp-pre {
 
 ---
 
-### **Testing:**
+### <span style="color: #d7827e;">Testing:</span>
 1. **Tested Functional Features:**
     - Ensured the functionality of the GUI.
     - Tested for correct output and invoices.
@@ -234,16 +124,16 @@ marp-pre {
 
 ---
 
-## **Challenges & Outcomes**
+## <span style="color: #d7827e;">Challenges & Outcomes</span>
 
-### **Challenges:**
+---
+
+### <span style="color: #d7827e;">Challenges:</span>
 - **Modern Design with FX Libraries:**  
   - Faced difficulties in using FX libraries.
 
 - **Scene Builder Issues:**  
   - Encountered limitations with Scene Builder.
-
----
 
 - **Class Responsibility Distribution:**  
   - Struggled with effectively assigning responsibilities.
@@ -254,7 +144,8 @@ marp-pre {
 
 ---
 
-### **Outcomes:**
+### <span style="color: #d7827e;">Outcomes:</span>
+
 - **Chatbots Are Impressive (Not Really):**
   - Helpful to get things initiated.  
   - A good friend to talk to.  
@@ -263,4 +154,3 @@ marp-pre {
 - **Got a Peek of What's to Come:**  
   - Gained insight into how software is developed.  
   - Learned project management tools.  
-
