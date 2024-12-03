@@ -53,8 +53,7 @@ p {
   - List of system features and behaviors required for operation.
 
 ---
-
-### <span style="color: #d7827e;">Non-Functional Requirements:</span>
+- **Non-Functional Requirements:**
   - System performance, security, scalability, and usability standards.
 
 - **Use Case Specification:**  
