@@ -15,8 +15,9 @@ public class Invoice {
     private final String ownerQid;
     private String paymentStatus;
     private final String description;
+    private String type;
 
-    public Invoice(double amount, String vehicleVin,
+    public Invoice(String type,double amount,
                    String ownerQid, String description) {
         this.invoiceId = generateInvoiceId();
         this.amount = amount;
@@ -41,7 +42,7 @@ public class Invoice {
     private String generateInvoiceId() {
         return UUID.randomUUID().toString();
     }
-    public void generateInvoiceReport(String invoiceId, double amount, LocalDate dueDate, LocalDate issueDate,
+    public void generateInvoiceReport(String tyype,String invoiceId, double amount, LocalDate dueDate, LocalDate issueDate,
                                              String ownerQid, String paymentStatus, String description) {
         String fileName = "Invoice_" + invoiceId + ".txt";
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {

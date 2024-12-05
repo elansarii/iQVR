@@ -48,10 +48,9 @@ public class Owner {
 
         vehicle.setOwner(newOwner);
         vehicle.setPrevOwner(this);
-        Invoice bill=new Invoice(150.0, vin, newOwner.getQid(), "Transfer of ownership");
+        Invoice bill = InvoiceFactory.createInvoice("Transfer", 150.0, newOwner.getQid(), "Transfer of ownership");
         iQVR.bills.add(bill);
-        bill.generateInvoiceReport(bill.getInvoiceId(), bill.getAmount(), bill.getDueDate(),
-                bill.getIssueDate(), bill.getOwnerQid(), bill.getPaymentStatus(), bill.getDescription());
+
 
         vehicle.vehicleDetails();
         return true;

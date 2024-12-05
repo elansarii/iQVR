@@ -20,7 +20,7 @@ class InvoiceTest {
         String description = "Transfer Fee";
 
 
-        Invoice invoice = new Invoice(amount, "VIN123456789", ownerQid, description);
+        Invoice invoice = new Invoice("TransferInvoice",amount, ownerQid, description);
         assertNotNull(invoice.getInvoiceId(), "Invoice ID should not be null");
         assertEquals(amount, invoice.getAmount());
         assertEquals(ownerQid, invoice.getOwnerQid());
@@ -53,7 +53,7 @@ class InvoiceTest {
 
     @Test
     void testGenerateInvoiceId() {
-        Invoice invoice = new Invoice(100.0, "VIN123456789", "12345", "Test Description");
+        Invoice invoice = new Invoice("TransferInvoice",100.0,  "12345", "Test Description");
 
         String invoiceId = invoice.getInvoiceId();
         assertNotNull(invoiceId, "Generated Invoice ID should not be null");
@@ -70,7 +70,7 @@ class InvoiceTest {
         String paymentStatus = "paid";
         String description = "Registration Fee";
         Invoice invoice = new Invoice(invoiceId, amount, issueDate, dueDate, ownerQid, paymentStatus, description);
-        invoice.generateInvoiceReport(invoiceId, amount, dueDate, issueDate, ownerQid, paymentStatus, description);
+        invoice.generateInvoiceReport("TransferInvoice",invoiceId, amount, dueDate, issueDate, ownerQid, paymentStatus, description);
 
         String fileName = "Invoice_" + invoiceId + ".txt";
         try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
